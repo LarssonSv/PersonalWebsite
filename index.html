@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simon Larsson</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+  <!-- My CSS -->
+  <link href = "css/index.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body id="page-top"  background="pictures/wavegrid.png">>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" style="font-family: 'Lexend Deca', sans-serif;"  href="#page-top">Simon Larsson</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="font-family: 'Lexend Deca', sans-serif;" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="font-family: 'Lexend Deca', sans-serif;" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="font-family: 'Lexend Deca', sans-serif;" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" style="font-family: 'Lexend Deca', sans-serif;" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Simon Larsson</h1>
+      <p class="lead">Game-Programming</p>
+    </div>
+  </header>
+
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Portfolio</h2>
+          <ul style="list-style: none;">
+          
+            <li>
+
+              <!--Poster-->
+              <div style="padding-bottom: 2.5%;">
+              <img src="pictures/posters/Poster_BeatBorn.jpg" class="float-left" style="height: 25%; width: 20% " alt="...">
+                <div class="test">
+                  <!--Game Info-->
+                  <div class="row01">
+                    <ul class ="ulInfo">
+                      <li>Project Name</li>
+                      <li>Genre</li>
+                      <li>Platform</li>
+                      <li>Language</li>
+                      <li>Engine</li>
+                      <li>Development Time</li>
+                      <li>Team Size</li>
+                    </ul>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="row02">
+                    <ul class="ulInfo2">
+                      <li>Beat Born</li>
+                      <li>Hack N Slash</li>
+                      <li>Windows</li>
+                      <li>C#</li>
+                      <li>Unity 2019.3.0(Alpha4b)</li>
+                      <li>7 Weeks</li>
+                      <li>12</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!--What Did i do-->
+              <ul>
+                <li style="font-size: 1.2rem;"><u>ROUND CREATION TOOL</u></li>
+                <p class="lead">
+                  Our Designers wanted a tool to edit rounds with these functions:
+                </p>
+                <ul style="list-style-type: disc ">
+                  <li>Rounds with scaling difficulty</li>
+                  <li>Waves in those rounds</li>
+                  <li>Show popup text (tutorials, hints)</li>
+                  <li>Set/Pause/stop rounds and waves(save points)</li>
+                  <li>Play sounds</li>
+                  <ul style="list-style-type: disc ">
+                    <li>At Round Start</li>
+                    <li>At Wave Start</li>
+                    <li>At difficulty change</li>
+                    <li>At any time (To indicate a boss fight)</li>
+                  </ul>
+                  <li>Spawn Enemies </li>
+                    <ul style="list-style-type: disc ">
+                      <li>At what spawnpoint?</li>
+                      <li>What type of enemy?</li>
+                      <li>How many?</li>
+                      <li>Should the next wave wait to spawn until these enemies are dead?</li>
+                    </ul>
+                </ul>
+
+
+                <li><b>Ai Implementation</b></li>
+                  <p class="lead" style="margin-bottom: 5px;">We had 3 enemy concepts with different combat patterns and behaviors. I made the creation of the behaviors that would be universal a priority, to open up
+                    the doors for other programmers to jump on the ship with the creation of more specific behaviors. <br>They were also gifted with an
+                    <i>Attack System</i> with support for multiple attacks/abilities depending on external data. This allowed us to use the same code for all of our units and the use of a specific ability class
+                    when needed.
+                    <br>
+                    I made the Ai Navigation slot based to avoid to many enemies grouping up on the player at the same time, we applied this system to everything the Ai could interact with to stop odd scenarios.
+                  </p>
+
+                <li><b>VFX Implementation</b></li>
+
+
+              </ul>
+              
+              <iframe style ="margin-top: 3%;" width="100%" height="280px" src="https://www.youtube.com/embed/--NSbJGAZ8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+              <div class="linkTab">
+                <div>
+                  <img alt="Github" src="pictures/icons/github.svg" style="width: 10%; height: 10%; margin-bottom: 2%;">
+                  <a class="textLink" href="https://www.google.se">Github</a>
+                </div>
+                <div>
+                  <img alt="Github" src="pictures/icons/github.svg" style="width: 10%; height: 10%; margin-bottom: 2%;">
+                  <a class="textLink" href="https://www.google.se">Build</a>
+                </div>
+                <div>
+                  <img alt="Github" src="pictures/icons/github.svg" style="width: 10%; height: 10%; margin-bottom: 2%;">
+                  <a class="textLink" href="https://www.google.se">Members</a>
+                </div>
+              </div>
+
+            </li> 
+            
+           <!-- <li>
+              <h4>Horde Havoc</h4>
+              <p class ="lead">The player guides their orcs through small bite-sized levels filled with obstacles. "Horde Havoc" only requires two mouse buttons to play. Left click and drag to select your orcs, right click to move. The Horde acts as both the player character and a resource to manage. The humorous tone and stylized visuals encourage the player to sacrifice the orcs. The player can use objects like oil barrels and bonfires placed in the level. Play with fire, burn obstacles or blow them away. Orcs that consume oil turn into volatile walking bombs. Sawblades, swinging axes and boulders are all obstacles to tackle. Traps react to how many orcs the player throws at them, slowing them or breaking them completely. How many orcs that make it all the way to the end is dependent on player choice, timing and creativity. But remember; The Horde is disorderly, and accidents are bound to happen.</p>
+              
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show C# Code</button>
+              <div id="demo" class="collapse in">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kLgdnP40ncA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li> -->
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="dimmer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Education</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Working Experience</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact Me</h2>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Simon Larsson 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>

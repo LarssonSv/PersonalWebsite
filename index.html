@@ -31,7 +31,7 @@
 <body id="page-top">>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav" style="background-image: url('pictures/bg.jpg');">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" style="font-family: 'Lexend Deca', sans-serif;"  href="#page-top">Simon Larsson</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,15 +56,18 @@
     </div>
   </nav>
 
-  <header class="bg-primary text-white">
-    <div class="container text-center">
-      <h1>Simon Larsson</h1>
-      <p class="lead">Game-Programming</p>
-    </div>
+  <header style="padding-top: 0; padding-bottom: 20px;">
+
+      <div class="tech-slideshow">
+        <div class="mover-1"></div>
+        <div class="mover-2"></div>
+
+      </div>
+
+
   </header>
 
   <section id="portfolio">
-
     <div class="container">
       <div class="row">
         <div class="col-xl-8 mx-auto" >
@@ -292,11 +295,11 @@
                 <a class="textLink" href="https://www.google.se">Github</a>
               </div>
               <div style="height: 100%; width: 100%;">
-                <img alt="Build" src="pictures/icons/github.svg" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                <img alt="Build" src="pictures/icons/downloadIcon.png" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
                 <a class="textLink" href="https://www.google.se">Build</a>
               </div>
               <div style="height: 100%; width: 100%;">
-                <img alt="Members" src="pictures/icons/github.svg" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                <img alt="Members" src="pictures/icons/people.png" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
                 <a class="textLink" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Members</a>
               </div>
             </div>
@@ -340,7 +343,7 @@
     </div>
   </section>
 
-  <section id="education" class="backgroundFIll">
+  <section id="education" style="background-color: rgba(0,0,0,0.1);">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
@@ -418,7 +421,7 @@
                   <h3 style="margin-top: 10px;">Fast Food Worker</h3>
                   <ul style="list-style-type: none">
                     <li>Max Burgers</li>
-                    <li><img alt="Burgers" src="pictures/icons/max.svg" style="height: 70px; width: 40px;"></li>
+                    <li><img alt="Burgers" src="pictures/icons/max.png" style="height: 70px; width: 100px; border-radius: 10px;"></li>
                     <li>2017 Q2 & 2017 Q3</li>
                   </ul>
                 </div>
@@ -427,12 +430,51 @@
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" style="background-color: rgba(0,0,0,0.1);">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Contact Me</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <div class="ContactTab">
+            <div>
+          <form action="https://formspree.io/simon.larsson1997@outlook.com" method="POST">
+            <ul>
+              <li><span>Your Name:</span></li>
+              <li><input type="text" placeholder="Name" name="name"></li>
+              <li><span>Your Mail:</span></li>
+              <li><input type="email" placeholder="example@mail.com" name="_replyto"></li>
+              <li><span>Your Text:</span></li>
+              <li><textarea name="message" rows="5" placeholder="Text..."></textarea></li>
+              <li><input type="submit" value="Send"></li>
+            </ul>
+          </form>
+            </div>
+            <div>
+              <div class="ContactInfo">
+                <div>
+                  <ul style="float: right; text-align: right;">
+                    <li>Name</li>
+                    <li>Phone</li>
+                    <li>Mail</li>
+                    <li>Location</li>
+                    <li>CV</li>
+                  </ul>
+                </div>
+                <div style="background-color: white;"></div>
+                <div>
+                  <ul style="float: left; text-align: left;">
+                    <li>Simon Larsson</li>
+                    <li>+46736631997</li>
+                    <li>Simon.Larsson1997@outlook.com</li>
+                    <li>Stockholm/Liljeholmen</li>
+                    <li><a href="https://drive.google.com/uc?export=download&id=1S_One0gBUaPiU9I6r7Pe1c4JgOqdOcDO">Download PDF</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -440,7 +482,7 @@
 
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer class="py-5 bg-dark" style="background-image: url('pictures/bg.jpg');">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; Simon Larsson 2019</p>
     </div>

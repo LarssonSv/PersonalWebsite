@@ -22,12 +22,13 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
 
 
 </head>
 
-<body id="page-top"  background="pictures/wavegrid.png">>
+<body id="page-top">>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
@@ -63,19 +64,24 @@
   </header>
 
   <section id="portfolio">
+
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 mx-auto">
+        <div class="col-xl-8 mx-auto" >
           <h2>Portfolio</h2>
-          <ul style="list-style: none;">
+          <div class="Seperator" style="margin-top: 10px; margin-bottom: 10px;"> </div>
+          <ul style="list-style: none; width: 100%;">
           
             <li>
 
               <!--Poster-->
-              <div style="padding-bottom: 2.5%;">
-              <img src="pictures/posters/Poster_BeatBorn.jpg" class="float-left" style="height: 25%; width: 20% " alt="...">
+              <div style="padding-bottom: 5%;">
+
                 <div class="test">
                   <!--Game Info-->
+                  <div>
+                    <img src="pictures/posters/Poster_BeatBorn.jpg" class="float-right img-fluid GameImage" alt="Responsive image">
+                  </div>
                   <div class="row01">
                     <ul class ="ulInfo">
                       <li>Project Name</li>
@@ -101,26 +107,27 @@
                   </div>
                 </div>
               </div>
+
               <!--What Did i do-->
-              <ul>
-                <li style="font-size: 1.2rem;"><u>ROUND CREATION TOOL</u></li>
+
+                <li><b>ROUND CREATION TOOL</b></li>
                 <p class="lead">
                   Our Designers wanted a tool to edit rounds with these functions:
                 </p>
-                <ul style="list-style-type: disc ">
+                <ul style="list-style-type: disc; padding-left: 30px ">
                   <li>Rounds with scaling difficulty</li>
                   <li>Waves in those rounds</li>
                   <li>Show popup text (tutorials, hints)</li>
                   <li>Set/Pause/stop rounds and waves(save points)</li>
                   <li>Play sounds</li>
-                  <ul style="list-style-type: disc ">
+                  <ul style="list-style-type: disc; padding-left: 5%; ">
                     <li>At Round Start</li>
                     <li>At Wave Start</li>
                     <li>At difficulty change</li>
                     <li>At any time (To indicate a boss fight)</li>
                   </ul>
                   <li>Spawn Enemies </li>
-                    <ul style="list-style-type: disc ">
+                    <ul style="list-style-type: disc;padding-left: 5%; ">
                       <li>At what spawnpoint?</li>
                       <li>What type of enemy?</li>
                       <li>How many?</li>
@@ -139,55 +146,239 @@
                   </p>
 
                 <li><b>VFX Implementation</b></li>
+                <p class="lead" style="margin-bottom: 5px;">We had 3 enemy concepts with different combat patterns and behaviors. I made the creation of the behaviors that would be universal a priority, to open up
+                  the doors for other programmers to jump on the ship with the creation of more specific behaviors. <br>They were also gifted with an
+                  <i>Attack System</i> with support for multiple attacks/abilities depending on external data. This allowed us to use the same code for all of our units and the use of a specific ability class
+                  when needed.
+                  <br>
+                  I made the Ai Navigation slot based to avoid to many enemies grouping up on the player at the same time, we applied this system to everything the Ai could interact with to stop odd scenarios.
+                </p>
 
-
-              </ul>
               
               <iframe style ="margin-top: 3%;" width="100%" height="280px" src="https://www.youtube.com/embed/--NSbJGAZ8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
               <div class="linkTab">
-                <div>
-                  <img alt="Github" src="pictures/icons/github.svg" style="width: 10%; height: 10%; margin-bottom: 2%;">
+                <div style="height: 100%; width: 100%;">
+                  <img alt="Github" src="pictures/icons/github.svg" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
                   <a class="textLink" href="https://www.google.se">Github</a>
                 </div>
-                <div>
-                  <img alt="Github" src="pictures/icons/github.svg" style="width: 10%; height: 10%; margin-bottom: 2%;">
+                <div style="height: 100%; width: 100%;">
+                  <img alt="Build" src="pictures/icons/github.svg" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
                   <a class="textLink" href="https://www.google.se">Build</a>
                 </div>
+                <div style="height: 100%; width: 100%;">
+                  <img alt="Members" src="pictures/icons/github.svg" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                  <a class="textLink" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Members</a>
+                </div>
+              </div>
+              <div class="collapse" id="collapseExample">
                 <div>
-                  <img alt="Github" src="pictures/icons/github.svg" style="width: 10%; height: 10%; margin-bottom: 2%;">
-                  <a class="textLink" href="https://www.google.se">Members</a>
+                  <div class="MemberTab">
+                    <div>
+                      <ul class="ulInfo">
+                        <li>Simon</li>
+                        <li>Simon</li>
+                        <li>Simon</li>
+                        <li>Simon</li>
+                        <li>Simon</li>
+                        <li>Simon</li>
+                      </ul>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                      <ul class="ulInfo2">
+                        <li>Programming</li>
+                        <li>Simon</li>
+                        <li>Simon</li>
+                        <li>Simon</li>
+                        <li>Simon</li>
+                        <li>Simon</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="Seperator"> </div>
+
+            <li>
+
+              <!--Poster-->
+              <div style="padding-bottom: 5%; margin-top: 5%;">
+
+                <div class="test">
+                  <!--Game Info-->
+                  <div>
+                    <img src="pictures/posters/Poster_BeatBorn.jpg" class="float-right img-fluid GameImage" alt="Responsive image">
+                  </div>
+                  <div class="row01">
+                    <ul class ="ulInfo">
+                      <li>Project Name</li>
+                      <li>Genre</li>
+                      <li>Platform</li>
+                      <li>Language</li>
+                      <li>Engine</li>
+                      <li>Development Time</li>
+                      <li>Team Size</li>
+                    </ul>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="row02">
+                    <ul class="ulInfo2">
+                      <li>Beat Born</li>
+                      <li>Hack N Slash</li>
+                      <li>Windows</li>
+                      <li>C#</li>
+                      <li>Unity 2019.3.0(Alpha4b)</li>
+                      <li>7 Weeks</li>
+                      <li>12</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-            </li> 
-            
-           <!-- <li>
-              <h4>Horde Havoc</h4>
-              <p class ="lead">The player guides their orcs through small bite-sized levels filled with obstacles. "Horde Havoc" only requires two mouse buttons to play. Left click and drag to select your orcs, right click to move. The Horde acts as both the player character and a resource to manage. The humorous tone and stylized visuals encourage the player to sacrifice the orcs. The player can use objects like oil barrels and bonfires placed in the level. Play with fire, burn obstacles or blow them away. Orcs that consume oil turn into volatile walking bombs. Sawblades, swinging axes and boulders are all obstacles to tackle. Traps react to how many orcs the player throws at them, slowing them or breaking them completely. How many orcs that make it all the way to the end is dependent on player choice, timing and creativity. But remember; The Horde is disorderly, and accidents are bound to happen.</p>
-              
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Show C# Code</button>
-              <div id="demo" class="collapse in">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
+              <!--What Did i do-->
 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/kLgdnP40ncA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </li> -->
-            
+            <li><b>ROUND CREATION TOOL</b></li>
+            <p class="lead">
+              Our Designers wanted a tool to edit rounds with these functions:
+            </p>
+            <ul style="list-style-type: disc; padding-left: 30px ">
+              <li>Rounds with scaling difficulty</li>
+              <li>Waves in those rounds</li>
+              <li>Show popup text (tutorials, hints)</li>
+              <li>Set/Pause/stop rounds and waves(save points)</li>
+              <li>Play sounds</li>
+              <ul style="list-style-type: disc; padding-left: 5%; ">
+                <li>At Round Start</li>
+                <li>At Wave Start</li>
+                <li>At difficulty change</li>
+                <li>At any time (To indicate a boss fight)</li>
+              </ul>
+              <li>Spawn Enemies </li>
+              <ul style="list-style-type: disc;padding-left: 5%; ">
+                <li>At what spawnpoint?</li>
+                <li>What type of enemy?</li>
+                <li>How many?</li>
+                <li>Should the next wave wait to spawn until these enemies are dead?</li>
+              </ul>
+            </ul>
+
+
+            <li><b>Ai Implementation</b></li>
+            <p class="lead" style="margin-bottom: 5px;">We had 3 enemy concepts with different combat patterns and behaviors. I made the creation of the behaviors that would be universal a priority, to open up
+              the doors for other programmers to jump on the ship with the creation of more specific behaviors. <br>They were also gifted with an
+              <i>Attack System</i> with support for multiple attacks/abilities depending on external data. This allowed us to use the same code for all of our units and the use of a specific ability class
+              when needed.
+              <br>
+              I made the Ai Navigation slot based to avoid to many enemies grouping up on the player at the same time, we applied this system to everything the Ai could interact with to stop odd scenarios.
+            </p>
+
+            <li><b>VFX Implementation</b></li>
+            <p class="lead" style="margin-bottom: 5px;">We had 3 enemy concepts with different combat patterns and behaviors. I made the creation of the behaviors that would be universal a priority, to open up
+              the doors for other programmers to jump on the ship with the creation of more specific behaviors. <br>They were also gifted with an
+              <i>Attack System</i> with support for multiple attacks/abilities depending on external data. This allowed us to use the same code for all of our units and the use of a specific ability class
+              when needed.
+              <br>
+              I made the Ai Navigation slot based to avoid to many enemies grouping up on the player at the same time, we applied this system to everything the Ai could interact with to stop odd scenarios.
+            </p>
+
+
+            <iframe style ="margin-top: 3%;" width="100%" height="280px" src="https://www.youtube.com/embed/--NSbJGAZ8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div class="linkTab">
+              <div style="height: 100%; width: 100%;">
+                <img alt="Github" src="pictures/icons/github.svg" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                <a class="textLink" href="https://www.google.se">Github</a>
+              </div>
+              <div style="height: 100%; width: 100%;">
+                <img alt="Build" src="pictures/icons/github.svg" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                <a class="textLink" href="https://www.google.se">Build</a>
+              </div>
+              <div style="height: 100%; width: 100%;">
+                <img alt="Members" src="pictures/icons/github.svg" style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                <a class="textLink" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Members</a>
+              </div>
+            </div>
+            <div class="collapse" id="collapseExample">
+              <div>
+                <div class="MemberTab">
+                  <div>
+                    <ul class="ulInfo">
+                      <li>Simon</li>
+                      <li>Simon</li>
+                      <li>Simon</li>
+                      <li>Simon</li>
+                      <li>Simon</li>
+                      <li>Simon</li>
+                    </ul>
+                  </div>
+                  <div class="divider"></div>
+                  <div>
+                    <ul class="ulInfo2">
+                      <li>Programming</li>
+                      <li>Simon</li>
+                      <li>Simon</li>
+                      <li>Simon</li>
+                      <li>Simon</li>
+                      <li>Simon</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="Seperator"> </div>
+
+            </li>
+
           </ul>
+
+
         </div>
       </div>
     </div>
   </section>
 
-  <section id="education" class="dimmer">
+  <section id="education" class="backgroundFIll">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Education</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+          <div class="EducationTab">
+            <div class="box">
+              <h3 style="margin-top: 10px;">Future Games</h3>
+              <ul style="list-style-type: none">
+                <li>Game Programming</li>
+                <li><img alt="FutureGames" src="pictures/icons/FG.png" style="height: 70px; width: 70px; border-radius: 50%; border: 2px solid white;"></li>
+                <li>2.5 Years</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3 style="margin-top: 10px;">Södertörns HighSchool</h3>
+              <ul style="list-style-type: none">
+                <li>Game-Design/Scripting</li>
+                <li><img alt="Södertörns HighSchool" src="pictures/icons/sodertornWhiteText.png" style="height: 70px; width: 160px;"></li>
+                <li>1 Year</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3 style="margin-top: 10px;">MediaGymnasiet</h3>
+              <ul style="list-style-type: none">
+                <li>Information Technology and Media Technology Program</li>
+                  <li><img alt="MediaGymnasiet" src="pictures/icons/mediagymnasiet.jpg" style="height: 70px; width: 70px; border-radius: 50%; border: 2px solid white;"></li>
+                <li>3 Years</li>
+              </ul>
+            </div>
+            <div class="box">
+              <h3 style="margin-top: 10px;">Other Merits</h3>
+              <ul style="list-style-type: none">
+                <li>Kjell Academy Electricity And Digital/Analog signals</li>
+                <li>Cardiopulmonary rescue 2014 & 2018</li>
+                <li>Too many cooking shows on youtube</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -198,13 +389,45 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Working Experience</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <div class="EducationTab">
+                <div class="box">
+                    <h3 style="margin-top: 10px;">Store Manager/Salesmen</h3>
+                    <ul style="list-style-type: none">
+                        <li>Kjell & Company</li>
+                        <li><img alt="Kjell & Company" src="pictures/icons/kjell.png" style="height: 60px; width: 190px;border-radius: 10px;margin-bottom: 10px"></li>
+                        <li>2017 Q1 - 2018 Q3</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 style="margin-top: 10px;">Stage/Sound Technician</h3>
+                    <ul style="list-style-type: none">
+                        <li>Stockholm's City</li>
+                        <li><img alt="Stockholm's City" src="pictures/icons/kungsan.png" style="height: 70px; width: 70px; border-radius: 10px;"></li>
+                        <li>2015 Q2 - Current</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3 style="margin-top: 10px;">Logistics Worker</h3>
+                    <ul style="list-style-type: none">
+                        <li>Lundagrossisten</li>
+                        <li><img alt="Lundagrossisten" src="pictures/icons/lunda.png" style="height: 60px; width: 210px;border-radius: 10px;margin-bottom: 10px"></li>
+                        <li>2014 Q3 & 2015 Q3</li>
+                    </ul>
+                </div>
+                <div class="box">
+                  <h3 style="margin-top: 10px;">Fast Food Worker</h3>
+                  <ul style="list-style-type: none">
+                    <li>Max Burgers</li>
+                    <li><img alt="Burgers" src="pictures/icons/max.svg" style="height: 70px; width: 40px;"></li>
+                    <li>2017 Q2 & 2017 Q3</li>
+                  </ul>
+                </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="bg-light">
+  <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">

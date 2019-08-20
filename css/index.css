@@ -1,13 +1,17 @@
 h1 {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h2{
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
 }
 
 h4 {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 p {
@@ -17,23 +21,27 @@ p {
 
 ul{
     list-style-type: none;
+    padding: 0;
 }
 
 body {
     width: 100% !important;
     -webkit-font-smoothing: antialiased;
+    background-image: url("../pictures/wavegrid.png");
 }
 
 li {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .info {
     font-size: 1.1rem !important;
 }
 
-.dimmer {
-    background-color: rgba(0,0,0,0.1);
+.GameImage {
+    max-height: 190px;
+    border-radius: 10%;
+
 }
 
 .row01 {
@@ -43,10 +51,45 @@ li {
 }
 
 .test {
-    grid-template-columns: 1fr 1% 1fr;
+    grid-template-columns: 0.6fr 0.6fr 0.4% 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
     display: grid;
+}
+
+.dimmer {
+    background-color: rgba(0,0,0,0.41);
+}
+
+.MemberTab{
+    grid-template-columns: 6fr 0.4% 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    display: grid;
+}
+
+
+.EducationTab{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    display: grid;
+}
+
+.box {
+    background-color: black;
+    height: 200px;
+    text-align: center;
+    color: white;
+    vertical-align: center;
+}
+
+.Seperator {
+    margin-top: 3%;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+
 }
 
 .divider{
@@ -55,13 +98,13 @@ li {
 
 .ulInfo {
     list-style-type: none;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-align: right;
 }
 
 .ulInfo2 {
     list-style-type: none;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding: 0;
 }
 
@@ -71,7 +114,7 @@ li {
 }
 
 .lead {
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0;
 }
 
@@ -81,16 +124,16 @@ li {
     grid-row-gap: 15px;
     display: grid;
     text-align: center;
-    background-color: rgba(0,0,0,0.38);
 }
 
 .textLink{
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: black;
 }
 
-
-
+.col--8{
+    width: 100% !important;
+}
 
 
 @media only screen and (max-width: 600px) {

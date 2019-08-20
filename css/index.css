@@ -33,6 +33,17 @@ body {
 li {
     font-family: 'Oswald', sans-serif;
 }
+form{
+    width: 100%;
+}
+
+input{
+    width: 70%;
+}
+
+textarea {
+    width: 70%;
+}
 
 .info {
     font-size: 1.1rem !important;
@@ -40,7 +51,7 @@ li {
 
 .GameImage {
     max-height: 190px;
-    border-radius: 10%;
+    border-radius: 10px;
 
 }
 
@@ -135,6 +146,29 @@ li {
     width: 100% !important;
 }
 
+.ContactTab{
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    display: grid;
+    text-align: center;
+    color: white;
+}
+
+.ContactTab > div {
+    background-color: black;
+}
+
+.ContactInfo{
+    grid-template-columns: 1fr 1% 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    display: grid;
+    margin-top: 70px;
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -142,4 +176,43 @@ li {
 
  
 
+}
+
+
+.tech-slideshow {
+    height: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+    height: 200px;
+    width: 2526px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+    animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow .mover-2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 15s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+    opacity: 1;
+}
+
+@keyframes moveSlideshow {
+    100% {
+        transform: translateX(-66.6666%);
+    }
 }

@@ -183,6 +183,11 @@ p {
 
 }
 
+.BorderStyleSalmon{
+    border: 5px solid lightsalmon;
+
+}
+
 a:link, a:visited {
     color: lightcyan;
     text-decoration: none;
@@ -310,6 +315,15 @@ a:link:active, a:visited:active {
     height: 20px;
     text-align: center;
     background-color: lightgreen;
+    border-top-left-radius: 10px;
+    margin-top: -17px;
+}
+
+.ViewCodeButtonSalmon {
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    background-color: lightsalmon;
     border-top-left-radius: 10px;
     margin-top: -17px;
 }

@@ -1474,7 +1474,7 @@ void ABSAIAgent::PanicMode()
                             </div>
                         </div>
                     </div>
-                    <div class="Seperator" style="background-color:lightgreen;">
+                    <div class="Seperator" style="background-color:lightsalmon;">
 
                     </div>
                 </ul>
@@ -1484,6 +1484,451 @@ void ABSAIAgent::PanicMode()
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto portfolio">
+                <ul style="list-style: none; width: 100%;">
+
+                    <!--What Did i do-->
+                    <li>
+                        <!--Poster-->
+                        <div>
+                            <div class="test">
+                                <!--Game Info-->
+                                <div>
+                                    <img alt="Responsive image"
+                                         class="float-right img-fluid GameImage BorderStyleSalmon"
+                                         src="pictures/Ether/titleScreen.jpg"
+                                         style="max-height: 220px;">
+                                </div>
+                                <div class="row01">
+                                    <ul class="ulInfo" style="color:lightsalmon;">
+                                        <li>Project Name</li>
+                                        <li>Genre</li>
+                                        <li>Platform</li>
+                                        <li>Language</li>
+                                        <li>Engine</li>
+                                        <li>Development Time</li>
+                                        <li>Team Size</li>
+                                        <li>Graphics API</li>
+                                    </ul>
+                                </div>
+                                <div class="divider" style="background-color:lightsalmon;"></div>
+                                <div class="row02">
+                                    <ul class="ulInfo2" style="color:lightsalmon;">
+                                        <li>(WIP) Eter</li>
+                                        <li>Space sim</li>
+                                        <li>Windows</li>
+                                        <li>C#</li>
+                                        <li>Unity 2019.2.6</li>
+                                        <li>1 Week(as of 10/04)</li>
+                                        <li>3</li>
+                                        <li>DirectX11</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <video autoplay class="BorderStyleSalmon" controls height="100%" loop muted width="100%">
+                                        <source src="pictures/Ether/main.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><h6 style="color:lightsalmon;"><b>Server-sided</b></h6>
+
+                        <div class="float-right RightSideImage" style="max-width: 25%;">
+                            <video autoplay class="BorderStyleSalmon " controls loop muted
+                                   style="display:inline-block;"
+                                   width="100%">
+                                <source src="pictures/Ether/path.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="BorderStyleSalmon" style="max-width: 74%;">
+                            <p class="leadBox">
+                                <b style="color:lightsalmon;">Astar:</b>
+                            </p>
+                            <p>
+                                A path is calculated on the server, and is sent to the clients.
+                                The Astar takes in consideration of wall-positions foreach cell it evaluates(hard to see as we dont have any graphics for the walls yet).
+                                <br>If the server detects a cell in a current path being occupied(player moved to a path-cell).
+                                It will stop the Npc using that path and calculate a new one for the target cell.
+                                <br>
+                                <br>
+                                <br>
+                            </p>
+                            <div class="float-right ViewCodeButtonSalmon">
+                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
+                                   data-toggle="collapse" href="#code09" role="button"><b>View Code
+                                    C#</b></a>
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="code09" style="max-width: 74%;">
+                            <pre class="prettyprint lang-cs">
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Netkraft.Messaging;
+using UnityEngine;
+
+public static class ServerAstar
+{
+    private static Grid _grid;
+    private static List<Node> _openList = new List<Node>();
+    private static List<Node> _closedList = new List<Node>();
+    private static Node _current;
+    private static List<Node> _adjacencies;
+
+
+    public static void Init(Grid grid)
+    {
+        _grid = grid;
+    }
+
+    public static Vector2Int[] GetPath(Vector2Int gridStart, Vector2Int gridEnd)
+    {
+        _openList.Clear();
+        _closedList.Clear();
+        List<Node> path = new List<Node>();
+        Node start = new Node(gridStart);
+        _openList.Add(start);
+
+        while (_openList.Count > 0 && !_closedList.Exists(x => x.Position == gridEnd))
+        {
+            _current = _openList[0];
+            _openList.Remove(_current);
+            _closedList.Add(_current);
+            _adjacencies = GetAdjacentNodes(_current);
+
+            foreach (Node n in _adjacencies)
+            {
+                if(_closedList.Contains(n) || _openList.Contains(n))
+                    continue;;
+
+                n.Parent = _current;
+                n.DistanceToGoal = ManhattanDistance(n.Position, gridEnd);
+                n.Cost = 1 + n.Parent.Cost;
+                _openList.Add(n);
+                _openList = _openList.OrderBy(node => node.F).ToList();
+            }
+        }
+
+        if (!_closedList.Exists(x => x.Position == gridEnd))
+        {
+            Debug.Log("Could not find a Path!");
+            return null;
+        }
+
+        Node currentNode = _closedList[_closedList.IndexOf(_current)];
+
+        while (currentNode.Parent != start && currentNode != null)
+        {
+            path.Insert(0, currentNode);
+            currentNode = currentNode.Parent;
+        }
+
+        List<Vector2Int> temp = new List<Vector2Int>();
+
+        foreach (Node x in path)
+        {
+            temp.Add(x.Position);
+        }
+
+        return temp.ToArray();
+    }
+
+    private static List<Node> GetAdjacentNodes(Node n)
+    {
+        List<Node> temp = new List<Node>();
+
+        if(n.Position.y + 1 <= _grid.Height)
+        {
+            if(_grid.ValidMove(_grid.GetCell(n.Position), new Vector2Int(0, 1)))
+                temp.Add(new Node(new Vector2Int(n.Position.x, n.Position.y + 1)));
+        }
+        if(n.Position.y - 1 >= 0)
+        {
+            if(_grid.ValidMove(_grid.GetCell(n.Position), new Vector2Int(0, -1)))
+                temp.Add(new Node(new Vector2Int(n.Position.x, n.Position.y - 1)));
+        }
+        if(n.Position.x - 1 >= 0)
+        {
+            if(_grid.ValidMove(_grid.GetCell(n.Position), new Vector2Int(-1, 0)))
+                temp.Add(new Node(new Vector2Int(n.Position.x - 1, n.Position.y)));
+        }
+        if(n.Position.x + 1 <= _grid.Width)
+        {
+            if(_grid.ValidMove(_grid.GetCell(n.Position), new Vector2Int(1, 0)))
+                temp.Add(new Node(new Vector2Int(n.Position.x + 1, n.Position.y)));
+        }
+
+
+        return temp;
+    }
+    private static int ManhattanDistance(Vector2Int start, Vector2Int end)
+    {
+        checked {
+            return Mathf.Abs(start.x - end.x) + Mathf.Abs(start.y - end.y);
+        }
+    }
+
+}
+
+[Writable, Serializable]
+public class Node
+{
+    public Vector2Int Position;
+    public int DistanceToGoal;
+    public int Cost;
+    public Node Parent;
+    public float F
+    {
+        get
+        {
+            if (DistanceToGoal != -1 && Cost != -1)
+                return DistanceToGoal + Cost;
+            else
+                return -1;
+        }
+    }
+
+    public Node(Vector2Int start)
+    {
+        Position = start;
+        Cost = 1;
+        DistanceToGoal = -1;
+        Parent = null;
+    }
+
+}
+}
+                            </pre>
+                        </div>
+
+                        <div class="float-right RightSideImage" style="max-width: 25%; margin-top: 1%;">
+                            <video autoplay class="BorderStyleSalmon" controls loop muted
+                                   style="display:inline-block;"
+                                   width="100%">
+                                <source src="pictures/HordeHavoc/catapult.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+
+                        <div class="BorderStyleSalmon" style="max-width: 74%; margin-top: 1%;">
+                            <p class="leadBox">
+                                <b style="color:lightsalmon;">Moveables:</b>
+                            </p>
+                            <p>
+                                We are going for a Faster Than Light ripoff mixed with Overcooked. So our inventory system should be
+                                object-based in our ship. To create chaos for the players.<br>
+                                The server detects when a player input is being blocked by a moveable, if that moveable has space in
+                                the same direction as the input, it will be pushed. You can also drag moveables.
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+
+
+                            </p>
+
+                            <div class="float-right ViewCodeButtonSalmon">
+                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
+                                   data-toggle="collapse" href="#code04" role="button"><b>View Code
+                                    C++</b></a>
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="code04" style="max-width: 74% !important;">
+                             <pre class="prettyprint lang-cpp">
+#include "BSCatapultPreasure.h"
+#include "Components/BSSelectableComponent.h"
+#include <TimerManager.h>
+
+ABSCatapultPreasure::ABSCatapultPreasure()
+{
+	PrimaryActorTick.bCanEverTick = true;
+
+}
+
+void ABSCatapultPreasure::BeginPlay()
+{
+	Super::BeginPlay();
+
+	if (Collider != nullptr)
+	{
+		Collider->OnComponentBeginOverlap.AddDynamic(this, &ABSCatapultPreasure::BeginOverlap);
+		Collider->OnComponentEndOverlap.AddDynamic(this, &ABSCatapultPreasure::EndOverlap);
+		Collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
+		Collider->SetCollisionProfileName(FName("DeathComponent"));
+
+		FTimerManager& TimerManager = GetWorldTimerManager();
+		TimerManager.ClearTimer(untilNextLaunch);
+		TimerManager.ClearTimer(delayedDisable);
+	}
+}
+
+void ABSCatapultPreasure::BeginOverlap(UPrimitiveComponent* OverlappedComponent,
+                                 AActor* OtherActor, UPrimitiveComponent* OtherComponent,
+                                 int32 OtherBodyIndex, bool bFrameSweep, const FHitResult& SweepResults)
+{
+	if (Active && Target != nullptr)
+	{
+		if (ABSAIAgent* Orc = Cast<ABSAIAgent>(OtherActor))
+		{
+			if (Orc->IsDead() != true)
+			{
+				FTimerManager& TimerManager = GetWorldTimerManager();
+
+				FVector offset = Collider->GetCenterOfMass() +=
+                                 FVector(FMath::RandRange(-orcSpacing, orcSpacing), 0.0f,
+                                 FMath::RandRange(-orcSpacing, orcSpacing));
+
+				if (TimerManager.GetTimerRemaining(untilNextLaunch) <= 0.0f)
+				{
+					TimerManager.ClearTimer(untilNextLaunch);
+					TimerManager.SetTimer(untilNextLaunch, this, &ABSCatapultPreasure::Launch, Time, false);
+
+					if (OnDelayStart.IsBound())
+						OnDelayStart.Broadcast();
+				}
+
+				if(!agentList.Contains(Orc))
+				{
+					agentList.Add(Orc);
+				}
+
+			}
+		}
+	}
+}
+
+void ABSCatapultPreasure::Launch()
+{
+
+	for (int i = 0; i < agentList.Num(); i++)
+	{
+		if (UBSProjectileComponent* ProjectileComponent = agentList[i]->GetProjectileComp())
+		{
+			if (ProjectileComponent->Activated != true)
+			{
+				ProjectileComponent->SetTarget(Target->GetActorLocation());
+			}
+		}
+
+	}
+	agentList.Empty();
+
+	if (OnProjectileFire.IsBound())
+		OnProjectileFire.Broadcast();
+}
+
+void ABSCatapultPreasure::EndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex)
+{
+	if (ABSAIAgent* Orc = Cast<ABSAIAgent>(OtherActor))
+	{
+		agentList.Remove(Orc);
+		Orc->StopMovement();
+
+	}
+}
+
+</pre>
+                        </div>
+
+
+
+                    <div class="linkTab4">
+                        <div style="height: 100%; width: 100%;">
+                            <img alt="Github" src="pictures/icons/github.png"
+                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                            <a target="_blank" class="textLink" href="https://github.com/LarssonSv/BeatBorn"
+                               style="color: lightsalmon !Important;">Github</a>
+                        </div>
+                        <div style="height: 100%; width: 100%;">
+                            <img alt="Build" src="pictures/icons/downloadIcon.png"
+                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                            <a class="textLink"
+                               href="https://drive.google.com/open?id=1Bs4awq9-ngZQPTkhmAXmWB-BIGeW2A-C"
+                               style="color: lightsalmon !Important;">Build</a>
+                        </div>
+                        <div style="height: 100%; width: 100%;">
+                            <img alt="Members" src="pictures/icons/people.png"
+                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                            <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
+                               data-toggle="collapse" href="#collapseExample"
+                               role="button" style="color: lightsalmon !Important;">Members</a>
+                        </div>
+                        <div style="height: 100%; width: 100%;">
+                            <img alt="Members" src="pictures/icons/itch(2).png"
+                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
+                            <a target="_blank" class="textLink"
+                               href="https://sweetjp.itch.io/horde-havoc?secret=NHCaAbwJdlHX5THOuyfoenVJ3o"
+                               style="color: lightsalmon !Important;">Itch.io</a>
+                        </div>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div>
+                            <div class="MemberTab2">
+                                <div>
+                                    <ul class="ulInfo">
+                                        <li>Hanna Fridén</li>
+                                        <li>Jonas Petersson</li>
+                                        <li>Anton Samuelsson</li>
+                                        <li>Simon Larsson</li>
+                                        <li>Per Åkerström</li>
+                                        <li>Suat Kückükgöl</li>
+                                        <li>Corinne Boman</li>
+                                        <li>Attila Herczeg</li>
+                                        <li>Hanna Stenow</li>
+                                        <li>Mikaela Marti</li>
+                                        <li>Nicolas Lennman</li>
+                                        <li>Eddi Pettersson</li>
+                                        <li>Jonas Petersson</li>
+
+                                    </ul>
+                                </div>
+                                <div class="divider"></div>
+                                <div>
+                                    <ul class="ulInfo2">
+                                        <li>Design</li>
+                                        <li>Design</li>
+                                        <li>Design</li>
+                                        <li>Programming</li>
+                                        <li>Programming</li>
+                                        <li>Programming</li>
+                                        <li>3D Art</li>
+                                        <li>3D Art</li>
+                                        <li>3D Art</li>
+                                        <li>3D Art</li>
+                                        <li>2D Art</li>
+                                        <li>2D Art</li>
+                                        <li>Ljud</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Seperator" style="background-color:lightsalmon;">
+
+                    </div>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="education" style="background-color: rgba(0,0,0,0.1);">

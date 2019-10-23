@@ -1,196 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta content="" name="description">
-    <meta content="" name="author">
-
     <title>Simon Larsson</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/scss/styles.css">
 
-    <!-- Custom styles for this template -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <!-- Prism CSS -->
+    <link href="assets/css/prism.css" rel="stylesheet">
+    
+</head> 
 
-    <!-- My CSS -->
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/desert.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-
-</head>
-
-<body id="page-top">>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"
-     style="color: lightcyan; background-image: url('pictures/bg.jpg');">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger"
-           href="#page-top"
-           style="font-family: 'Roboto','One Open Sans', 'Helvetica Neue', Helvetica, sans-serif; color: lightcyan;">Simon
-            Larsson</a>
-        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler"
-                data-target="#navbarResponsive" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger"
-                       href="#portfolio"
-                       style="font-family: 'Roboto', 'One Open Sans', 'Helvetica Neue', Helvetica, sans-serif">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger"
-                       style="font-family: 'Roboto', 'One Open Sans', 'Helvetica Neue', Helvetica, sans-serif">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger"
-                       href="#work"
-                       style="font-family: 'Roboto', 'One Open Sans', 'Helvetica Neue', Helvetica, sans-serif">Work</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger"
-                       href="#contact"
-                       style="font-family: 'Roboto', 'One Open Sans', 'Helvetica Neue', Helvetica, sans-serif">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<header style="padding-top: 0; padding-bottom: 20px;">
-
-    <div class="fling-minislide">
-        <img alt="Slide 4" src="pictures/HeaderSlide1.jpg"/>
-        <img alt="Slide 3" src="pictures/HeaderSlide2.jpg"/>
-        <img alt="Slide 2" src="pictures/HeaderSlide1.jpg"/>
-        <img alt="Slide 1" src="pictures/HeaderSlide2.jpg"/>
-    </div>
-
-</header>
-
-<section id="portfolio">
-    <div class="container">
+<body style="background: url('assets/projects/wavegridDark.png');">
+    <!-- ******HEADER****** --> 
+    <header style="background: url('assets/projects/wavegrid.png');" class="header" >
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left rounded" src="assets/images/profile.jpg" alt="Simon Larsson">
+                <h1 class="name">Simon Larsson</h1>
+                <h2 class="desc">Game Programmer</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a title="Linkedin" href="https://www.linkedin.com/in/simon-larsson-389830182"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv"><i class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a title="Download CV" href="https://drive.google.com/file/d/1ddiVWRvPNYfKxIS-CsvGvPZMK9KeLOz_/view?usp=sharing"><i class="fas fa-portrait"></i></a></li>
+                    <li class="list-inline-item"><a title="Phone" href="tel:0736631997"><i class="fas fa-phone"></i></a></li>
+                    <li class="list-inline-item last-item"><a title="Mail" href="mailto:simon.larsson1997@outlook.com"><i class="fas fa-envelope "></i></a></li>
+                </ul>
+            </div><!--//profile-->
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper" >
         <div class="row">
-            <div class="mx-auto portfolio">
-                <ul style="list-style: none; width: 100%;">
+            <div class="primary col-lg-8 col-12">
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading"></h2>
 
-                    <li>
-                        <!--Poster-->
-                        <div>
-                            <div class="test">
-                                <!--Game Info-->
-                                <div>
-                                    <img alt="Responsive image"
-                                         class="float-right img-fluid GameImage BorderStyle"
-                                         src="pictures/BeatBorn/beatbornText.jpg">
+                        <div class="content">
+                                <div class="item featured text-center">
+                                <h3 class="title">Beat Born</h3>
+                                <p class="summary">Rhythm based Hack n Slash Tower Defence</p>
                                 </div>
-                                <div class="row01">
-                                    <ul class="ulInfo">
-                                        <li>Project Name</li>
-                                        <li>Genre</li>
-                                        <li>Platform</li>
-                                        <li>Language</li>
-                                        <li>Engine</li>
-                                        <li>Development Time</li>
-                                        <li>Team Size</li>
-                                        <li>Graphics API</li>
-                                    </ul>
+
+                            <div class="row">
+
+                                <div class="featured-image has-ribbon col-sm">
+                                    <img class="img-fluid project-image" src="assets/projects/BeatBorn/beatbornText.jpg" alt="project name" />
+                                    <div class="ribbon">
+                                        <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
+                                    </div>
                                 </div>
-                                <div class="divider"></div>
-                                <div class="row02">
-                                    <ul class="ulInfo2">
-                                        <li>Beat Born</li>
-                                        <li>Hack N Slash</li>
-                                        <li>Windows</li>
-                                        <li>C#</li>
-                                        <li>Unity 2019.3.0(Alpha4b)</li>
-                                        <li>7 Weeks</li>
-                                        <li>12</li>
-                                        <li>DirectX12 Unity HDRP</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <video autoplay class="BorderStyle" controls height="100%" loop muted width="100%">
-                                        <source src="pictures/BeatBorn/bbnl.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
+
+                                    <div class="desc text-left infoGrid col-sm">
+                                    <div class="row01">
+                                        <ul class="ulInfo">
+                                            <li>Platform</li>
+                                            <li>Language</li>
+                                            <li>Engine</li>
+                                            <li>Development Time</li>
+                                            <li>Team Size</li>
+                                            <li>Graphics API</li>
+                                        </ul>
+                                    </div>
+                                    <div class="dividerInfo"></div>
+                                    <div class="row02">
+                                        <ul class="ulInfo2">
+                                            <li>Windows</li>
+                                            <li>C#</li>
+                                            <li>Unity 2019.3.0(Alpha4b)</li>
+                                            <li>7 Weeks</li>
+                                            <li>12</li>
+                                            <li>DirectX12 Unity HDRP</li>
+                                        </ul>
+                                    </div>
+                                </div><!--//desc-->
+
                             </div>
-                        </div>
-                    </li>
-                    <!--What Did i do-->
+                                            </div><!--//item-->
 
-                    <li><h6><b>ROUND CREATION TOOL</b></h6>
-                        <div ID="style-2" class="float-right RightSideImage BorderStyle"
-                             style="overflow-y: scroll; max-height: 570px;">
-                            <img alt="tool" src="pictures/toolImage.png" style="width: 100%;">
-                        </div>
+                            <hr class="divider" />
 
-                        <div class="BorderStyle" style="max-width: 74%;">
-                            <p class="leadBox">
-                                <b>Request From Designers:</b>
-                            </p>
-                            <ul style="list-style-type: disc; padding-left: 30px; margin-bottom: 1%; ">
-                                <li>Rounds with scaling difficulty</li>
-                                <li>Waves in those rounds</li>
-                                <li>Show popup text (tutorials, hints)</li>
-                                <li>Set/Pause/stop rounds and waves(save points)</li>
-                                <li>Play sounds</li>
-                                <ul style="list-style-type: disc; padding-left: 5%; ">
-                                    <li>At Round Start</li>
-                                    <li>At Wave Start</li>
-                                    <li>At difficulty change</li>
-                                    <li>At any time (To indicate a boss fight)</li>
-                                </ul>
-                                <li>Spawn Enemies</li>
-                                <ul style="list-style-type: disc;padding-left: 5%; ">
-                                    <li>At what spawnpoint?</li>
-                                    <li>What type of enemy?</li>
-                                    <li>How many?</li>
-                                    <li>Should the next wave wait until the enemies of the current wave are dead?</li>
-                                </ul>
-                            </ul>
-                        </div>
+                            <div class="item row">
 
-                        <div class="BorderStyle" style="max-width: 74%; margin-top: 1%;">
-                            <p class="leadBox">
-                                <b>My Solution:</b>
-                            </p>
-                            <p>
-                                I implemented a data handler class to deal with external data given by an editor class.
-                                A C# List stores a data-struct foreach <b>event</b> the user adds to the round.
-                                <br> To make it easy for the user. I made the EditorScript follow a timeline to fire <b>events</b>.
-                                This way the system is easy to understand as everyone has worked with a timeline before.
-                                <br> The events can be changed at anytime to another <b>event</b> with a dropdown-menu.
-                                The data is stored per Event. So if the user changes his mind the data is still there.
-                                And no work has to be redone.
-                                <br> FMOD (Sound Plugin) uses a hashmap to store all their sounds. I implemented a
-                                string to do a lookup in the FMOD map to play audio.
-                            </p>
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="scrollableImage">
+                                    <img style="width:100%;" class="img-fluid project-image" src="assets/projects/BeatBorn/toolimage.png" alt="project name" />
+                                    </div>
+                                </a>
 
-                            <div class="float-right ViewCodeButton">
-                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                                   data-toggle="collapse" href="#code01" role="button"><b>View Code
-                                    C#</b></a>
-                            </div>
-                        </div>
-                        <div class="collapse" id="code01">
-                            <pre class="prettyprint lang-cs">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Round Creation Tool</a></h3>
+                                    <p class="mb-2">Design Request:</p>
+                                    <ul style="list-style-type: disc;">
+                                        <li>Rounds with scaling difficulty</li>
+                                        <li>Waves in those rounds</li>
+                                        <li>Show popup text (tutorials, hints)</li>
+                                        <li>Set/Pause/stop rounds and waves(save points)</li>
+                                        <li>Play sounds</li>
+                                        <ul style="list-style-type: disc; padding-left: 5%; ">
+                                            <li>At Round Start</li>
+                                            <li>At Wave Start</li>
+                                            <li>At difficulty change</li>
+                                            <li>At any time (To indicate a boss fight)</li>
+                                        </ul>
+                                        <li>Spawn Enemies</li>
+                                        <ul style="list-style-type: disc;padding-left: 5%; ">
+                                            <li>At what spawnpoint?</li>
+                                            <li>What type of enemy?</li>
+                                            <li>How many?</li>
+                                            <li>Should the next wave wait until the enemies of the current wave are dead?</li>
+                                        </ul>
+                                    </ul>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code01" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C#</a></p>
+                                </div><!--//desc-->
+
+                                <div class="desc col-12 collapse codeContainer" id="code01">
+                                    <pre>
+                                        <code class="language-csharp ">
 using UnityEngine;
 using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.AI;
 
 [CustomEditor(typeof(Round))]
 public class RoundScriptableEdit : Editor
@@ -228,7 +174,7 @@ public class RoundScriptableEdit : Editor
         soundStyle.normal.textColor = Color.yellow;
 
         waitStyle.alignment = TextAnchor.MiddleCenter;
-        waitStyle.normal.textColor = Color.green;
+        waitStyle.normal.textColor = Color.white;
 
         waveStyle.alignment = TextAnchor.MiddleCenter;
         waveStyle.normal.textColor = Color.red;
@@ -299,55 +245,60 @@ public class RoundScriptableEdit : Editor
             switch (MyListRef.FindPropertyRelative("function").enumValueIndex)
             {
                 case (int)RoundController.slotFunction.AiSpawn:
+                    GUILayout.BeginHorizontal();
                     EditorGUILayout.LabelField("Ai Spawn", spawnerStyle);
+                    EditorGUILayout.PropertyField(MyFunction, GUIContent.none, false);
+                    GUILayout.EndHorizontal();
                     EditorGUILayout.Space();
-                    EditorGUILayout.PropertyField(MyFunction);
                     EditorGUILayout.PropertyField(MyEnemyType);
                     EditorGUILayout.PropertyField(MySpawnPoint);
                     EditorGUILayout.PropertyField(MySpawnAmount);
+
                     if (MySpawnAmount.intValue < 1)
                     {
                         MySpawnAmount.intValue = 1;
                     }
-                    EditorGUILayout.PropertyField(MySpawnTime);
-                    if (MySpawnTime.floatValue < i)
-                    {
-                        MySpawnTime.floatValue = i;
-                    }
+                    if (MySpawnTime.floatValue < i && MySpawnTime.floatValue > i)
+                     {
+                         MySpawnTime.floatValue = i;
+                     }
                     break;
 
                 case (int)RoundController.slotFunction.PauseRoundTime:
+                    EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.LabelField("Delay Round(Time)", waitStyle);
+                    EditorGUILayout.PropertyField(MyFunction, GUIContent.none, false);
+                    GUILayout.EndHorizontal();
                     EditorGUILayout.Space();
-                    EditorGUILayout.PropertyField(MyFunction);
                     EditorGUILayout.PropertyField(MyWaitTime);
-                    EditorGUILayout.PropertyField(MySpawnTime);
-                    if (MySpawnTime.floatValue < i)
+                    if (MySpawnTime.floatValue < i && MySpawnTime.floatValue > i)
                     {
                         MySpawnTime.floatValue = i;
                     }
                     break;
 
                 case (int)RoundController.slotFunction.WaitForAiClear:
+                    EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.LabelField("Pause For Ai Clear", waveStyle);
+                    EditorGUILayout.PropertyField(MyFunction, GUIContent.none, false);
+                    GUILayout.EndHorizontal();
                     EditorGUILayout.Space();
-                    EditorGUILayout.PropertyField(MyFunction);
-                    EditorGUILayout.PropertyField(MySpawnTime);
-                    if (MySpawnTime.floatValue < i)
+                    if (MySpawnTime.floatValue < i && MySpawnTime.floatValue > i)
                     {
                         MySpawnTime.floatValue = i;
                     }
                     break;
 
                 case (int)RoundController.slotFunction.Popup:
+                    EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.LabelField("Popup/Hint", OpenUIStyle);
+                    EditorGUILayout.PropertyField(MyFunction, GUIContent.none, false);
+                    GUILayout.EndHorizontal();
                     EditorGUILayout.Space();
-                    EditorGUILayout.PropertyField(MyFunction);
                     EditorGUILayout.PropertyField(MyMessage);
                     EditorGUILayout.PropertyField(MySprite);
                     EditorGUILayout.PropertyField(MyType);
-                    EditorGUILayout.PropertyField(MySpawnTime);
-                    if (MySpawnTime.floatValue < i)
+                    if (MySpawnTime.floatValue < i && MySpawnTime.floatValue > i)
                     {
                         MySpawnTime.floatValue = i;
                     }
@@ -355,32 +306,47 @@ public class RoundScriptableEdit : Editor
 
 
                 case (int)RoundController.slotFunction.ShowScore:
+                    EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.LabelField("Show Scoreboard", ShowScoreStyle);
+                    EditorGUILayout.PropertyField(MyFunction, GUIContent.none, false);
+                    GUILayout.EndHorizontal();
                     EditorGUILayout.Space();
-                    EditorGUILayout.PropertyField(MySpawnTime);
 
-                    if (MySpawnTime.floatValue < i)
+                    if (MySpawnTime.floatValue < i && MySpawnTime.floatValue > i)
                     {
                         MySpawnTime.floatValue = i;
                     }
                     break;
 
                 default:
+                    EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.LabelField("Play Sound", soundStyle);
+                    EditorGUILayout.PropertyField(MyFunction, GUIContent.none, false);
+                    GUILayout.EndHorizontal();
                     EditorGUILayout.Space();
-                    EditorGUILayout.PropertyField(MyFunction);
                     EditorGUILayout.PropertyField(MySound);
-                    EditorGUILayout.PropertyField(MySpawnTime);
-                    if (MySpawnTime.floatValue < i)
+                    if (MySpawnTime.floatValue < i && MySpawnTime.floatValue > i)
                     {
                         MySpawnTime.floatValue = i;
                     }
                     break;
             }
 
-            //So the designers do not have to remake the whole round if they want to remove a slot :)
+            GUILayout.BeginHorizontal();
+            if (GUILayout.Button("Up"))
+            {
+                if (i - 1 > -1)
+                {
+                    list.GetArrayElementAtIndex(i).FindPropertyRelative("SpawnTime").floatValue -= 1.01f;
+                }
+            }
+
             if (GUILayout.Button("Remove"))
                 list.DeleteArrayElementAtIndex(i);
+            if (GUILayout.Button("Down"))
+                if(i + 1 <= list.arraySize)
+                    list.GetArrayElementAtIndex(i).FindPropertyRelative("SpawnTime").floatValue += 1.01f;
+            GUILayout.EndHorizontal();
 
             EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
         }
@@ -392,55 +358,65 @@ public class RoundScriptableEdit : Editor
 
     }
 
-}</pre>
-                        </div>
-
-                    </li>
-
-                    <li><h6><b>AI CREATION </b></h6></li>
-
-                    <div class="float-right RightSideImage">
-
-                        <video autoplay class="BorderStyle " controls loop muted style="display:inline-block;"
-                               width="100%">
-                            <source src="pictures/BeatBorn/coreattack.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video autoplay class="BorderStyle " controls loop muted style="display:inline-block;"
-                               width="100%">
-                            <source src="pictures/BeatBorn/ShooterAttack.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video autoplay class="BorderStyle " controls loop muted style="display:inline-block;"
-                               width="100%">
-                            <source src="pictures/BeatBorn/hunterAttack.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+}
+                                        </code>
+                                    </pre>
+                                </div>
 
 
-                    </div>
+                            </div><!--//item-->
 
-                    <div class="BorderStyle" style="max-width: 74%; margin-top: 1%;">
+                            <hr class="divider" />
 
-                        <p class="leadBox">
-                            <b>Flowchart:</b>
-                        </p>
+                            <div class="item row">
 
-                        <iframe frameborder="0"
-                                src="https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1#G1V1jK3qrp2FX75JQ-qN7cj3IES_6DBcXf"
-                                style="width:100%; height: 700px;"></iframe>
-                        <p>
-                            <br>
-                        </p>
-                        <div class="float-right ViewCodeButton">
-                            <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                               data-toggle="collapse" href="#code02" role="button"><b>View Code
-                                C#</b></a>
-                        </div>
-                    </div>
+                                <div class="desc col-sm">
+                                    <a target="_blank">
+                                        <img style="width:125%;" class="img-fluid project-image" src="assets/projects/BeatBorn/flowchart.jpg" alt="project name" />
+                                    </a>
+                                    <a target="_blank">
+                                        <video style="margin-top: 10px" class="img-fluid project-image" src="assets/projects/BeatBorn/Movie.mp4" loop muted autoplay></video>
+                                    </a>
+                                </div>
 
-                    <div class="collapse" id="code02">
-                        <pre class="prettyprint lang-cs">
+                                <div class="desc col-sm">
+                                    <h3 class="title"><a href="" target="_blank">Ai Creation</a></h3>
+                                    <p>With a short deadline, corners were cut and my implementation of our three enemies had to be fast. So a well structured StateMachine following my flowchart had to do.
+                                        <br> Using generic behaviors/classes, I could reuse must of the scripts for all of our enemies. I only added specific attack behaviors and some pathing behavior to seal the deal.
+                                        <br> I needed to save on performance so instead of adding a flocking behavior, I added a node system for player-aggro and the main objective (The nexus).
+                                        So each Ai was handed a path to a point around the target to reduced clumping of the Ai.
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </p>
+
+                                    <h3 class="title"><a href="" target="_blank">Making Rhythm A Focus</a></h3>
+                                    <p>
+                                        A design goal for the team with the AI was to make them act to the tempo in the music. So I added many subtle behaviors to convey this idea.
+                                    </p>
+                                    <ul style="list-style-type: disc; padding-left: 30px; margin-bottom: 1%; ">
+                                        <li>Attacks are synchronize to the beat of the music</li>
+                                        <li>Animations are started on beat.</li>
+                                        <ul style="list-style-type: disc;padding-left: 5%; ">
+                                            <li>Most animations are 15 frames or 0.25sec for a 90 tempo beat. So they also finish on
+                                                beat!
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <p>
+                                        The same goes for my implementation of our characters ultimate ability. On input I set our character to a ultimate-state.
+                                        After 1 beat(0.25seconds) I spawn the vfx to all our affected enemies and sets them into a stun-state.
+                                        The next beat the vfx strikes and damage is applied.
+                                    </p>
+
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code02" role="button" aria-expanded="false" aria-controls="code02"><i class="fas fa-external-link-alt"></i>Show C#</a></p>
+
+                                </div><!--//desc-->
+
+                                <div class="desc col-12 collapse codeContainer" id="code02">
+                                    <pre>
+                                        <code class="language-csharp ">
 #pragma warning disable 0649
 using UnityEngine;
 using System;
@@ -486,15 +462,15 @@ public class AiController : MonoBehaviour, IDamageable
     private void Awake()
     {
         Nexus = NexusCrowdManager.Instance;
-        Anime = GetComponentInChildren<Animator>();
-        Agent = GetComponent<NavMeshAgent>();
+        Anime = GetComponentInChildren<,Animator>();
+        Agent = GetComponent<,NavMeshAgent>();
         if (Player == null)
         {
-            Player = FindObjectOfType<PlayerEngine>().transform;
+            Player = FindObjectOfType<,PlayerEngine>().transform;
         }
         Machine.Initialize(this);
         if(_hurtLerper == null)
-            _hurtLerper = GetComponentInChildren<MaterialFloatLerper>();
+            _hurtLerper = GetComponentInChildren<,MaterialFloatLerper>();
     }
 
     public void Setup(Vector3 startPos)
@@ -503,7 +479,7 @@ public class AiController : MonoBehaviour, IDamageable
         Agent.enabled = true;
         Hp = MaxHp;
         Agent.Warp(startPos);
-        Machine.TransitionTo<AiWalking>();
+        Machine.TransitionTo<,AiWalking>();
     }
 
     private void Update()
@@ -515,7 +491,8 @@ public class AiController : MonoBehaviour, IDamageable
         CheckIfInBounds();
     }
 
-    public void TakeDamage(int damage = 1, RhythmGrade grade = RhythmGrade.Miss, Transform attacker = null, float MissMultiplier = 1)
+    public void TakeDamage(int damage = 1,RhythmGrade grade = RhythmGrade.Miss,
+                                                            Transform attacker = null, float MissMultiplier = 1)
     {
         if(_hurtLerper)
             _hurtLerper.LerpValue(true);
@@ -537,26 +514,26 @@ public class AiController : MonoBehaviour, IDamageable
         {
             if (CurrentSlot.playerIndex >= 0 && CurrentSlot.playerIndex <= 3)
             {
-                Machine.GetState<AiWalking>().shouldFreeSlot = false;
+                Machine.GetState<,AiWalking>().shouldFreeSlot = false;
             }
 
             if ((int)grade > (int)GradeRequiredToKnockback)
             {
                 if(EnemyType != Enemy.shooterAi)
-                    Machine.GetState<AiKnockbackState>().TriggerHeavyKnockBack = true;
+                    Machine.GetState<,AiKnockbackState>().TriggerHeavyKnockBack = true;
             }
 
             if(EnemyType == Enemy.basicAi)
-                Machine.TransitionTo<AiKnockbackState>();
+                Machine.TransitionTo<,AiKnockbackState>();
         }
     }
 
     public void Die()
     {
-        Player.GetComponent<AiSlotMachine>().SetSlotFree(CurrentSlot.playerIndex);
+        Player.GetComponent<,AiSlotMachine>().SetSlotFree(CurrentSlot.playerIndex);
         if (CurrentSlot.nexusIndex != -1)
             Nexus.NpcSlots[CurrentSlot.nexusIndex].taken = false;
-        Machine.TransitionTo<AiDeath>();
+        Machine.TransitionTo<,AiDeath>();
     }
 
     //Removed on release build
@@ -580,371 +557,129 @@ public class AiController : MonoBehaviour, IDamageable
 
 }
 }
-                            </pre>
-                    </div>
+                                        </code>
+                                    </pre>
 
+                            
+                        </div><!--//content-->
 
-                    <div class="float-right RightSideImage" style="margin-top: 1%;">
+                            </div><!--//section-inner-->
 
-                        <video autoplay class="BorderStyle " controls loop muted style="display:inline-block;"
-                               width="100%">
-                            <source src="pictures/BeatBorn/ulti.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
+                            <hr class="divider"/>
 
-                    <div class="BorderStyle" style="max-width: 74%; margin-top: 1%;">
-
-                        <p class="leadBox">
-                            <b>Making Rhythm A Focus:</b>
-                        </p>
-                        <p>
-                            A design goal for the team with the AI was to make them act to the tempo in the music. So
-                            many subtle behaviors were added to convey this idea.
-                        </p>
-                        <ul style="list-style-type: disc; padding-left: 30px; margin-bottom: 1%; ">
-                            <li>Attacks are synchronize to the beat of the music</li>
-                            <li>Animations are started on beat.</li>
-                            <ul style="list-style-type: disc;padding-left: 5%; ">
-                                <li>Most animations are 15 frames or 0.25sec for a 90 tempo beat. So they also finish on
-                                    beat!
-                                </li>
-                            </ul>
-                        </ul>
-                        <p>
-                            The same goes for my implementation of our characters ultimate ability.
-                            On input I set our character to a ultimate-state.
-                            After 1 beat(0.25seconds) I spawn the vfx to all our affected enemies and sets them into a stun-state.
-                            The next beat the vfx strikes and damage is applied.
-                            <br>
-                            <br>
-                        </p>
-                        <div class="float-right ViewCodeButton">
-                            <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                               data-toggle="collapse" href="#code98" role="button"><b>View Code
-                                C#</b></a>
-                        </div>
-                    </div>
-
-                    <div class="collapse" id="code98">
-                        <pre class="prettyprint lang-cs">
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using FMOD.Studio;
-using FMODUnity;
-using UnityEditor.VFX;
-using UnityEngine.Experimental.Animations;
-using UnityEngine.Experimental.VFX;
-
-
-[CreateAssetMenu(menuName = "States/PlayerMovement/Super")]
-public class PlayerSuperState : PlayerState
-{
-    [System.Serializable]
-    public struct SuperStruct
-    {
-        [Header("Animation"),
-        Tooltip("This is the name of the animation state in the animator and the name of the trigger as well")]
-        public string AnimationTag;
-        [Tooltip("This clip determines the time for a animation")] public AnimationClip Clip;
-
-        [Header("Attack")]
-        [Range(0f, 1f)] public float SyncPercentage;
-        public int Damage;
-        public float AttackTime;
-        public Vector2 minMaxRadius;
-        public LayerMask mask;
-
-        [Header("Feedback")]
-        public VFXStruct HitParticle;
-        public GameObject ShurikenPrefab;
-
-        [Header("Sound")]
-        [EventRef] public string AttackSFX;
-        [EventRef] public string HitSFX;
-    }
-
-    [SerializeField] private string vfxTag = "VFXUlti";
-    [SerializeField] private LayerMask mask;
-    [SerializeField] private float radius;
-    [SerializeField] public SuperStruct[] Supers;
-
-    private SuperStruct currentSuper => Supers[index];
-
-    private List<GameObject> toBeDisabled = new List<GameObject>();
-    private int index;
-    private int skipBeats = 0;
-    private Collider[] toDamage;
-
-    FMOD.Studio.EventInstance ultSnap;
-    FMOD.Studio.ParameterInstance ultSnapParam;
-
-    public override void Initialize(object owner)
-    {
-        base.Initialize(owner);
-        ultSnap = FMODUnity.RuntimeManager.CreateInstance("snapshot:/UltSnap");
-        ultSnap.getParameter("UltSnapParam", out ultSnapParam);
-        ultSnap.start();
-    }
-
-
-
-    public override void Enter()
-    {
-        skipBeats = 0;
-        CameraController.Instance.ChangeStateToIdle();
-        toBeDisabled.Clear();
-        BeatManager.OnBeat += EnterOnBeat;
-        for (int i = Supers.Length - 1; i <= 0; i--)
-        {
-            if (SyncPowerManager.CurrentSyncProcent() >= Supers[i].SyncPercentage)
-            {
-                index = i;
-                SyncPowerManager.UseSyncPower(Supers[i].SyncPercentage);
-                break;
-            }
-        }
-        Velocity = Vector3.zero;
-    }
-
-    public override void StateUpdate()
-    {
-
-    }
-
-    private void EnterOnBeat()
-    {
-        PlayerAnimator.SetTrigger(currentSuper.AnimationTag);
-        ultSnapParam.setValue(100f);
-        RuntimeManager.PlayOneShot(currentSuper.AttackSFX);
-        toDamage = Physics.OverlapSphere(player.transform.position, radius, mask);
-        BeatManager.OnBeat -= EnterOnBeat;
-        BeatManager.OnBeat += DoDamage;
-
-        foreach (Collider x in toDamage)
-        {
-            AiController brain = x.transform.root.GetComponent<AiController>();
-            if (brain?.EnemyType == Enemy.basicAi)
-            {
-                brain.Machine.GetState<AiKnockbackState>().TriggerHeavyKnockBack = true;
-                brain.Machine.TransitionTo<AiKnockbackState>();
-            }
-            toBeDisabled.Add(ObjectPooler.Instance.SpawnFromPool(vfxTag,
-                                        x.transform.root.position, x.transform.root.rotation, x.transform.root));
-        }
-
-    }
-
-
-    private void DoDamage()
-    {
-        if (skipBeats < 2)
-        {
-            if(skipBeats == 1)
-            {
-                RuntimeManager.PlayOneShot(currentSuper.HitSFX);
-                ultSnapParam.setValue(0f);
-                foreach (Collider x in toDamage)
-                {
-                    x.transform.root.GetComponent<IDamageable>().TakeDamage(currentSuper.Damage);
-                }
-            }
-            skipBeats++;
-
-            return;
-        }
-
-
-
-        BeatManager.OnBeat -= DoDamage;
-        TransitionTo<PlayerIdleState>();
-
-    }
-
-    public override void Exit()
-    {
-        player.StartCoroutine(DelayedDestruction());
-
-    }
-
-    IEnumerator DelayedDestruction()
-    {
-        yield return new WaitForSeconds(3f);
-        foreach (GameObject y in toBeDisabled)
-        {
-            y.transform.parent = null;
-            y.SetActive(false);
-        }
-
-    }
-
-
-}
-                            </pre>
-                    </div>
-
-                    <div class="linkTab">
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Github" src="pictures/icons/github.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a class="textLink" href="https://github.com/LarssonSv/BeatBorn"
-                               style="color: lightblue !Important;">Github</a>
-                        </div>
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Build" src="pictures/icons/downloadIcon.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a class="textLink"
-                               href="https://drive.google.com/open?id=1UN8Ccemkvdjkg_MIlJBL081xNw62Qg0X"
-                               style="color: lightblue !Important;">Build</a>
-                        </div>
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Members" src="pictures/icons/people.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                               data-toggle="collapse" href="#collapseExample"
-                               role="button" style="color: lightblue !Important;">Members</a>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseExample">
-                        <div>
-                            <div class="MemberTab">
-                                <div>
-                                    <ul class="ulInfo" >
-                                        <li>Jonas Petersson</li>
-                                        <li>Magnus Jakobsson</li>
-                                        <li>Alexander Kullman</li>
-                                        <li>Johan Andersson</li>
-                                        <li>Simon Larsson</li>
-                                        <li>Volodymyr Shabala</li>
-                                        <li>Emil Rönnlund</li>
-                                        <li>David Dessantis</li>
-                                        <li>Hanna Stenow</li>
-                                        <li>Nemanja Zivic</li>
-                                        <li>Nicolas Lennman</li>
-                                        <li>Maya Egnér</li>
-                                    </ul>
+                            <div class="item featured text-center">
+                                <h3 class="title">Final Words</h3>
+                                <div class="featured-image has-ribbon">
+                                    <video class="img-fluid project-image" style="border: solid 3px green;" src="assets/projects/BeatBorn/bbnl.mp4" loop muted autoplay></video>
+                                    <div class="ribbon">
+                                        <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
+                                    </div>
                                 </div>
-                                <div class="divider"></div>
-                                <div>
-                                    <ul class="ulInfo2">
-                                        <li>Product owner, sound design/implementation, game design and composer</li>
-                                        <li>Sound design, UX design, game design and composer</li>
-                                        <li>Game design</li>
-                                        <li>Programming and scrum master</li>
-                                        <li>Programming Ai, VFX, Tool implementation</li>
-                                        <li>Programming</li>
-                                        <li>3D art, combat choreography, animation and rigging</li>
-                                        <li>3D art, VFX, tech art and lighting</li>
-                                        <li>3D art and environment art</li>
-                                        <li>3D art, character art</li>
-                                        <li>2D art, art direction, concept art and illustration</li>
-                                        <li>2D art, UI art and concept art</li>
-                                    </ul>
+
+                                <ul class="social list-inline">
+                                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv/BeatBorn"><i class="fab fa-github-alt"></i></a></li>
+                                    <li class="list-inline-item"><a title="Download" href="https://drive.google.com/open?id=1UN8Ccemkvdjkg_MIlJBL081xNw62Qg0X"><i class="fas fa-download"></i></a></li>
+                                    <li class="list-inline-item last-item"><a title="Phone" href="https://sweetjp.itch.io/beatborn?secret=GXaktfsfFvC2O4x8gXeNshzXpY"><i class="fab fa-itch-io"></i></a></li>
+                                </ul>
+
+                                <div class="text-center">
+
+                                <p class="summary" style="margin-bottom: 5px !important;">My contribution:</p>
+                                <ul class="contribution">
+                                    <li>Round System</li>
+                                    <li>Ai Implementation</li>
+                                    <li>VFX Implementation</li>
+                                    <li>Player Ultimate Ability</li>
+                                    <li>Light synchronisation with Audio</li>
+                                    <li>Co-development of Attack System</li>
+                                    <li>Controller Vibration Implementation</li>
+                                    <li>Co-design/Co-development of Score System</li>
+                                </ul>
+                                </div>
+                            </div><!--//item-->
+
+                </section><!--//BeatPorn-->
+
+                <section class="latest section">
+
+                    <div class="section-inner">
+                        <h2 class="heading"></h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+                                <h3 class="title">Horde Havoc</h3>
+                                <p class="summary">RTS Puzzle Game</p>
+                                <div class="row">
+
+                                    <div class="featured-image has-ribbon col-sm">
+                                        <img class="img-fluid project-image" src="assets/projects/HordeHavoc/hordehavoc.png" alt="project name" />
+                                        <div class="ribbon">
+                                            <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-left infoGrid col-sm">
+                                        <div class="row01">
+                                        <ul class="ulInfo">
+                                            <li>Platform</li>
+                                            <li>Language</li>
+                                            <li>Engine</li>
+                                            <li>Development Time</li>
+                                            <li>Team Size</li>
+                                            <li>Graphics API</li>
+                                        </ul>
+                                    </div>
+                                    <div class="dividerInfo"></div>
+                                    <div class="row02">
+                                        <ul class="ulInfo2">
+                                            <li>Windows</li>
+                                            <li>C++</li>
+                                            <li>Unreal Engine 4.21</li>
+                                            <li>4 Weeks</li>
+                                            <li>12</li>
+                                            <li>DirectX11</li>
+                                        </ul>
+                                    </div>
+                                </div><!--//desc-->
                                 </div>
 
                             </div>
-                        </div>
-                    </div>
-                    <div style="background-color:lightgreen;" class="Seperator">
 
-                    </div>
-                </ul>
+                            <hr class="divider" />
+
+                            <div class="item row">
+
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/SmashLoop.mp4" muted loop autoplay></video>
+                                    </div>
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/gearbreak.mp4" muted loop autoplay></video>
+                                    </div>
+                                </a>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Deathtrap Component</a></h3>
+                                   <p>
+                                       All of our traps in the game are driven by designer blueprints that are connect to my DeathTrapComponent.
+                                       The component calculates direction of hits and forwards information about the kills to a log,
+                                       that on level completion is shown to the player.
+                                       The designer can choice what type of collider it wants to connect to the component.
+                                       So we were able to use the same component for all of our "killables" in the levels.
+                                       <br>
+                                       The component can also take damage.
+                                       To the left you can see an example of an orc exploding and destroying the component
+                                   </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code03" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C++</a></p>
+                                </div><!--//desc-->
 
 
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="mx-auto portfolio">
-                <ul style="list-style: none; width: 100%;">
 
-                    <!--What Did i do-->
-                    <li>
-                        <!--Poster-->
-                        <div>
-                            <div class="test">
-                                <!--Game Info-->
-                                <div>
-                                    <img alt="Responsive image"
-                                         class="float-right img-fluid GameImage BorderStyleGreen"
-                                         src="pictures/HordeHavoc/hordehavoc.png"
-                                         style="max-height: 220px;">
-                                </div>
-                                <div class="row01">
-                                    <ul class="ulInfo" style="color:lightgreen;">
-                                        <li>Project Name</li>
-                                        <li>Genre</li>
-                                        <li>Platform</li>
-                                        <li>Language</li>
-                                        <li>Engine</li>
-                                        <li>Development Time</li>
-                                        <li>Team Size</li>
-                                        <li>Graphics API</li>
-                                    </ul>
-                                </div>
-                                <div class="divider" style="background-color:lightgreen;"></div>
-                                <div class="row02">
-                                    <ul class="ulInfo2" style="color:lightgreen;">
-                                        <li>Horde Havoc</li>
-                                        <li>RTS Puzzle</li>
-                                        <li>Windows</li>
-                                        <li>C++</li>
-                                        <li>UnrealEngine 4.21</li>
-                                        <li>4 Weeks</li>
-                                        <li>12</li>
-                                        <li>DirectX11</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <video autoplay class="BorderStyleGreen" controls height="100%" loop muted width="100%">
-                                        <source src="pictures/HordeHavoc/Horde%20Havoc%20Trailer.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                            </div><!--//DeathTrap-->
 
-                    <li><h6 style="color:lightgreen;"><b>Components</b></h6>
-
-                        <div class="float-right RightSideImage" style="max-width: 25%;">
-                            <video autoplay class="BorderStyleGreen " controls loop muted
-                                   style="display:inline-block;"
-                                   width="100%">
-                                <source src="pictures/HordeHavoc/SmashLoop.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-
-                        <div class="BorderStyleGreen" style="max-width: 74%;">
-                            <p class="leadBox">
-                                <b style="color:lightgreen;">DeathTrapComponent:</b>
-                            </p>
-                            <p>All of our traps in the game are driven by designer blueprints that are connect to my
-                                DeathTrapComponent.
-                                The component calculates direction of hits and forwards information about the kills to a
-                                log, that on level completion
-                                is shown to the player. The designer can choice what type of collider it wants to
-                                connect to the component.
-                                So we were able to use the same component for all of our killables in the levels.
-                                <br>
-                                The component can also take damage. To the right you can see an example of an orc
-                                exploding and destroying the component.
-                                <br>
-                                <br>
-                            </p>
-                            <div class="float-right ViewCodeButtonGreen">
-                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                                   data-toggle="collapse" href="#code03" role="button"><b>View Code
-                                    C++</b></a>
-                            </div>
-                        </div>
-
-                        <div class="collapse" id="code03" style="max-width: 74%;">
-                            <pre class="prettyprint lang-cpp">
+                            <div class="desc col-12 collapse codeContainer" id="code03">
+                                    <pre>
+                                        <code class="language-c++">
 #include "BSDeathTrapComponent.h"
 #include "Core/BSAIAgent.h"
 
@@ -975,7 +710,7 @@ void UBSDeathTrapComponent::BeginOverlap(UPrimitiveComponent* OverlappedComponen
 {
 	if (trapActive)
 	{
-		if (ABSAIAgent* Orc = Cast<ABSAIAgent>(OtherActor))
+		if (ABSAIAgent* Orc = Cast(OtherActor))
 		{
 			if (Orc->IsDead() != true)
 			{
@@ -987,59 +722,43 @@ void UBSDeathTrapComponent::BeginOverlap(UPrimitiveComponent* OverlappedComponen
 	}
 }
 }
-                            </pre>
-                        </div>
-
-                        <div class="float-right RightSideImage" style="max-width: 25%; margin-top: 1%;">
-                            <video autoplay class="BorderStyleGreen " controls loop muted
-                                   style="display:inline-block;"
-                                   width="100%">
-                                <source src="pictures/HordeHavoc/catapult.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-
-                        <div class="BorderStyleGreen" style="max-width: 74%; margin-top: 1%;">
-                            <p class="leadBox">
-                                <b style="color:lightgreen;">Catapult:</b>
-                            </p>
-                            <p>
-                                Events are rigged up to give the designer the tools they need to send some orcs to
-                                heaven.
-                                For example we have events for Catapult-Recharge, Catapult-Fire, Catapult Ready.
-                                The destination target is set by an Unreal Target Actor.
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
+                                        </code>
+                                    </pre>
 
 
-                            </p>
+                            </div><!--//content-->
 
-                            <div class="float-right ViewCodeButtonGreen">
-                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                                   data-toggle="collapse" href="#code04" role="button"><b>View Code
-                                    C++</b></a>
-                            </div>
-                        </div>
+                            <hr class="divider" />
 
-                        <div class="collapse" id="code04" style="max-width: 74% !important;">
-                             <pre class="prettyprint lang-cpp">
+                            <div class="item row">
+
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/catapult.mp4" muted loop autoplay></video>
+                                    </div>
+                                </a>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Catapult</a></h3>
+                                    <p>
+                                        Events are rigged up to give the designer the tools they need to send some orcs to heaven.
+                                        For example we have events for Catapult-Recharge, Catapult-Fire, Catapult Ready.
+                                        <br>
+                                        The destination target is set by an Unreal Target Actors.
+                                        A curve is then calculated with a ProjectileComponent with a random offset.
+                                        <br>
+                                    </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code04" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C++</a></p>
+                                </div><!--//desc-->
+
+                            </div><!--//Catapult-->
+
+                            <div class="desc col-12 collapse codeContainer" id="code04">
+                                    <pre>
+                                        <code class="language-c++">
 #include "BSCatapultPreasure.h"
 #include "Components/BSSelectableComponent.h"
-#include <TimerManager.h>
+#include
 
 ABSCatapultPreasure::ABSCatapultPreasure()
 {
@@ -1070,7 +789,7 @@ void ABSCatapultPreasure::BeginOverlap(UPrimitiveComponent* OverlappedComponent,
 {
 	if (Active && Target != nullptr)
 	{
-		if (ABSAIAgent* Orc = Cast<ABSAIAgent>(OtherActor))
+		if (ABSAIAgent* Orc = Cast(OtherActor))
 		{
 			if (Orc->IsDead() != true)
 			{
@@ -1119,9 +838,10 @@ void ABSCatapultPreasure::Launch()
 		OnProjectileFire.Broadcast();
 }
 
-void ABSCatapultPreasure::EndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex)
+void ABSCatapultPreasure::EndOverlap(UPrimitiveComponent* OverlappedComponent,
+                                            AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex)
 {
-	if (ABSAIAgent* Orc = Cast<ABSAIAgent>(OtherActor))
+	if (ABSAIAgent* Orc = Cast(OtherActor))
 	{
 		agentList.Remove(Orc);
 		Orc->StopMovement();
@@ -1129,59 +849,115 @@ void ABSCatapultPreasure::EndOverlap(UPrimitiveComponent* OverlappedComponent, A
 	}
 }
 
-</pre>
-                        </div>
+  //NEW CLASS
+UBSProjectileComponent::UBSProjectileComponent()
+{
+	PrimaryComponentTick.bCanEverTick = true;
 
-                        <div class="float-right RightSideImage" style="max-width: 25%; margin-top: 1%;">
-                            <video autoplay class="BorderStyleGreen " controls loop muted
-                                   style="display:inline-block;"
-                                   width="100%">
-                                <source src="pictures/HordeHavoc/destroy.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <video autoplay class="BorderStyleGreen " controls loop muted
-                                   style="display:inline-block;"
-                                   width="100%">
-                                <source src="pictures/HordeHavoc/camera.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+}
+void UBSProjectileComponent::BeginPlay()
+{
+	Super::BeginPlay();
+}
+void UBSProjectileComponent::TickComponent(float DeltaTime,
+                                            ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
+{
+	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-                        <div class="BorderStyleGreen" style="max-width: 74%; margin-top: 1%;">
-                            <p class="leadBox">
-                                <b style="color:lightgreen;">CameraShake:</b>
-                            </p>
-                            <p>
-                                I got distracted and implemented DestructableMeshes from the Apex Physic Engine,
-                                then I realized we need a damn CameraShake. With us having a lot happening on the screen
-                                at once. I thought it was a good idea make the CameraShaker addition based. So if 10 orcs
-                                explode at the same time. They will add shake on top of each other. This turned out great
-                                and gave our designers more time to focus on other things then tweaking "large explosion"
-                                shake values. With some added roll to the shake I also achieved a cartony feel.
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
+	if (!Activated) return;
+
+	Velocity -= FVector::UpVector * Gravity * DeltaTime;
+	FHitResult hit;
+	GetOwner()->AddActorWorldOffset(Velocity * DeltaTime, true, &hit);
+
+	if (hit.bBlockingHit)
+	{
+		if (OnProjectileHit.IsBound())
+			OnProjectileHit.Broadcast(hit, Velocity);
 
 
-                            </p>
+		if (ABSAIAgent* Orc = Cast<,ABSAIAgent>(GetOwner()))
+		{
+			Orc->ActivateUnit();
 
-                            <div class="float-right ViewCodeButtonGreen">
-                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                                   data-toggle="collapse" href="#code99" role="button"><b>View Code
-                                    C++</b></a>
-                            </div>
-                        </div>
 
-                        <div class="collapse" id="code99" style="max-width: 74% !important;">
-                             <pre class="prettyprint lang-cpp">
+			if (UBSSelectableComponent* selectComp = Orc->GetSelectableComp())
+			{
+				selectComp->ReActivate();
+			}
+		}
+
+		Activated = false;
+	}
+
+
+}
+
+void UBSProjectileComponent::SetTarget(const FVector& worldLocation)
+{
+	const FVector Spacinglocation = worldLocation + FVector(FMath::RandRange(0.0f, Accuracy),
+                                            FMath::RandRange(0.0f, Accuracy),0.0f);
+
+	TargetLocation = Spacinglocation;
+	StartLocation = GetOwner()->GetActorLocation();
+	FVector toLocation = TargetLocation - StartLocation;
+	const float deltaZ = TargetLocation.Z - StartLocation.Z;
+	toLocation.Z = 0.0f;
+	const float planarDistance = toLocation.Size2D();
+	TrajectoryRotation = toLocation.Rotation();
+
+
+	AngleInRads = FMath::Atan((deltaZ + 0.5f * Gravity * TimeToImpact * TimeToImpact) / planarDistance);
+	InitialVelocity = planarDistance / (TimeToImpact * FMath::Cos(AngleInRads));
+	TrajectoryRotation.Pitch = FMath::RadiansToDegrees(AngleInRads);
+	Velocity = TrajectoryRotation.Vector() * InitialVelocity;
+
+	Activated = true;
+
+	if (OnProjectileFire.IsBound())
+		OnProjectileFire.Broadcast(TrajectoryRotation);
+}
+
+
+
+
+                                        </code>
+                                    </pre>
+
+
+                            </div><!--//content-->
+
+                            <hr class="divider"/>
+
+                            <div class="item row">
+
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/destroy.mp4" muted loop autoplay></video>
+                                    </div>
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/camera.mp4" muted loop autoplay></video>
+                                    </div>
+                                </a>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">CameraShake</a></h3>
+                                    <p>
+                                        I got distracted and implemented DestructableMeshes from the Apex Physic Engine, then I realized we need a damn CameraShake.
+                                        With us having a lot happening on the screen at once. I thought it was a good idea to make the CameraShaker addition based.
+                                        So if ten Orcs explode at the same time. They will add shake on top of each other.
+                                        <br>
+                                        This turned out great and gave our designers more time to focus on other things then tweaking "large explosion" shake values.
+                                        With some added roll to the shake I also achieved a cartony feel.
+                                    </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code05" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C++</a></p>
+                                </div><!--//desc-->
+
+                            </div><!--//CameraShake-->
+
+                            <div class="desc col-12 collapse codeContainer" id="code05">
+                                    <pre>
+                                        <code class="language-c++">
 void UBSCameraShaker::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
@@ -1214,55 +990,44 @@ void UBSCameraShaker::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 	}
 
 }
+                                        </code>
+                                    </pre>
 
 
-</pre>
-                        </div>
+                            </div><!--//content-->
 
+                            <hr class="divider"/>
 
+                            <div class="item row">
 
-                    </li>
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/destroy.mp4" muted loop autoplay></video>
+                                    </div>
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/camera.mp4" muted loop autoplay></video>
+                                    </div>
+                                </a>
 
-                    <li style=""><h6 style="color:lightgreen;"><b>The Orc AI</b></h6>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">The Orc Ai</a></h3>
+                                    <p>
+                                        Events are rigged up to give the designer the tools they need to send some orcs to heaven.
+                                        For example we have events for Catapult-Recharge, Catapult-Fire, Catapult Ready.
+                                        The destination target is set by an Unreal Target Actor.
+                                        <br>
+                                        I did not want to use boids as we wanted to keep the horde as predictable as possible.
+                                        So I ended up giving the orcs target location by drawing up a circle around the mouse click position.
+                                        With some added noise it turned out great and predictable.
+                                    </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code06" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C++</a></p>
+                                </div><!--//desc-->
 
-                        <div class="float-right RightSideImage" style="max-width: 25%;">
-                            <video autoplay class="BorderStyleGreen " controls loop muted
-                                   style="display:inline-block;"
-                                   width="100%">
-                                <source src="pictures/HordeHavoc/crowd.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                            </div><!--//OrcAi-->
 
-                        <div class="BorderStyleGreen" style="max-width: 74%; margin-top: 1%;">
-                            <p class="leadBox">
-                                <b style="color:lightgreen;">Crowd Pathing:</b>
-                            </p>
-                            <p>
-                                Events are rigged up to give the designer the tools they need to send some orcs to
-                                heaven.
-                                For example we have events for Catapult-Recharge, Catapult-Fire, Catapult Ready.
-                                The destination target is set by an Unreal Target Actor.
-                                <br>
-                                I did not want to use <b>boids</b> as we wanted to keep the horde as predictable as
-                                possible. So I ended up giving the orcs target location by drawing up a circle around
-                                the mouse click position. With some added noise it turned out great and predictable.
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                            </p>
-                            <div class="float-right ViewCodeButtonGreen">
-                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                                   data-toggle="collapse" href="#code05" role="button"><b>View Code
-                                    C++</b></a>
-                            </div>
-                        </div>
-                        <div class="collapse" id="code05" style="max-width: 74% !important;">
-                             <pre class="prettyprint lang-cpp">
+                            <div class="desc col-12 collapse codeContainer" id="code06">
+                                    <pre>
+                                        <code class="language-c++">
 void ABSPlayerController::SetMoveLocation()
 {
 	TimeOfLastMoveCommand = GetWorld()->GetRealTimeSeconds();
@@ -1321,7 +1086,7 @@ void ABSPlayerController::SetMoveLocation()
 		}
 
 		if (!UNavigationSystemV1::K2_ProjectPointToNavigation(GetWorld(), Location,
-                                 ProjectedLocation, nullptr, TSubclassOf<UNavigationQueryFilter>()))
+                                 ProjectedLocation, nullptr, TSubclassOf()))
 			continue;
 
 		if (Selectables[i]->OnMoveCommand.IsBound())
@@ -1329,50 +1094,42 @@ void ABSPlayerController::SetMoveLocation()
 		i++;
 	}
 }
-</pre>
-                        </div>
+                                        </code>
+                                    </pre>
 
-                        <div class="float-right RightSideImage" style="max-width: 25%; margin-top: 1%;">
-                            <video autoplay class="BorderStyleGreen " controls loop muted
-                                   style="display:inline-block;"
-                                   width="100%">
-                                <source src="pictures/HordeHavoc/panic.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
 
-                        <div class="BorderStyleGreen" style="max-width: 74%; margin-top: 1%;">
-                            <p class="leadBox">
-                                <b style="color:lightgreen;">Panic!:</b>
-                            </p>
-                            <p>
-                                I gave the Orc's a panic-mode when they are sat on fire, and this led to a lot of funny interactions.
-                                As our component system interacts with water and traps in the world (as seen to the right).
-                                They are given a random direction to run towards and the function will be recalled until they die or are not on fire anymore.
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                            </p>
-                            <div class="float-right ViewCodeButtonGreen">
-                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                                   data-toggle="collapse" href="#code06" role="button"><b>View Code
-                                    C++</b></a>
-                            </div>
-                        </div>
+                            </div><!--//content-->
 
-                        <div class="collapse" id="code06" style="max-width: 74% !important;">
-                             <pre class="prettyprint lang-cpp">
+                            <hr class="divider"/>
+
+                            <div class="item row">
+
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/panic.mp4" muted loop autoplay></video>
+                                    </div>
+                                </a>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Panic!</a></h3>
+                                    <p>
+                                        I gave the Orc's a panic-mode when they are sat on fire, and this led to a lot of funny interactions.
+                                        As our component system interacts with water and traps in the world (as seen to the left).
+                                        They are given a random direction to run towards and the function will be recalled until they die or if the fired is put out.
+                                    </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code07" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C++</a></p>
+                                </div><!--//desc-->
+
+                            </div><!--//Panic!-->
+
+                            <div class="desc col-12 collapse codeContainer" id="code07">
+                                    <pre>
+                                        <code class="language-c++">
 void ABSAIAgent::PanicMode()
 {
 
-	UBSSelectableComponent* selectableComp = Cast<UBSSelectableComponent>(GetComponentByClass(UBSSelectableComponent::StaticClass()));
-	UBSBurnableComponent* burnableComp = Cast<UBSBurnableComponent>(GetComponentByClass(UBSBurnableComponent::StaticClass()));
+	UBSSelectableComponent* selectableComp = Cast(GetComponentByClass(UBSSelectableComponent::StaticClass()));
+	UBSBurnableComponent* burnableComp = Cast(GetComponentByClass(UBSBurnableComponent::StaticClass()));
 
 	if (selectableComp && burnableComp)
 	{
@@ -1387,7 +1144,7 @@ void ABSAIAgent::PanicMode()
                                      FMath::Cos(FMath::DegreesToRadians(currentAngle)), 0);
 
 		if (UCharacterMovementComponent* CharMovementComp =
-                                     Cast<UCharacterMovementComponent>(GetComponentByClass(UCharacterMovementComponent::StaticClass())))
+                                     Cast(GetComponentByClass(UCharacterMovementComponent::StaticClass())))
 			CharMovementComp->bRequestedMoveUseAcceleration = false;
 
 		MoveToLocation(Location);
@@ -1397,178 +1154,238 @@ void ABSAIAgent::PanicMode()
 		TimerManager.SetTimer(circleTick, this, &ABSAIAgent::PanicMode, 0.5f, false);
 	}
 }
-</pre>
-                        </div>
+                                        </code>
+                                    </pre>
 
-                    </li>
 
-                    <div class="linkTab4">
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Github" src="pictures/icons/github.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a target="_blank" class="textLink" href="https://github.com/LarssonSv/BeatBorn"
-                               style="color: lightgreen !Important;">Github</a>
-                        </div>
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Build" src="pictures/icons/downloadIcon.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a class="textLink"
-                               href="https://drive.google.com/open?id=1Bs4awq9-ngZQPTkhmAXmWB-BIGeW2A-C"
-                               style="color: lightgreen !Important;">Build</a>
-                        </div>
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Members" src="pictures/icons/people.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                               data-toggle="collapse" href="#collapseExample"
-                               role="button" style="color: lightgreen !Important;">Members</a>
-                        </div>
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Members" src="pictures/icons/itch(2).png"
-                            style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a target="_blank" class="textLink"
-                               href="https://sweetjp.itch.io/horde-havoc?secret=NHCaAbwJdlHX5THOuyfoenVJ3o"
-                               style="color: lightgreen !Important;">Itch.io</a>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseExample">
-                        <div>
-                            <div class="MemberTab2">
-                                <div>
-                                    <ul class="ulInfo">
-                                        <li>Hanna Fridén</li>
-                                        <li>Jonas Petersson</li>
-                                        <li>Anton Samuelsson</li>
-                                        <li>Simon Larsson</li>
-                                        <li>Per Åkerström</li>
-                                        <li>Suat Kückükgöl</li>
-                                        <li>Corinne Boman</li>
-                                        <li>Attila Herczeg</li>
-                                        <li>Hanna Stenow</li>
-                                        <li>Mikaela Marti</li>
-                                        <li>Nicolas Lennman</li>
-                                        <li>Eddi Pettersson</li>
-                                        <li>Jonas Petersson</li>
+                            </div><!--//content-->
 
+                            <hr class="divider"/>
+
+                            <div class="item featured text-center">
+                                <h3 class="title">Final Words</h3>
+                                <div class="featured-image has-ribbon">
+                                    <video class="img-fluid project-image" style="border: solid 3px green;" src="assets/projects/HordeHavoc/Horde%20Havoc%20Trailer.mp4" loop muted autoplay></video>
+                                    <div class="ribbon">
+                                        <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
+                                    </div>
+                                </div>
+
+                                <ul class="social list-inline">
+                                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv/HordeHavoc"><i class="fab fa-github-alt"></i></a></li>
+                                    <li class="list-inline-item"><a title="Download" href="https://drive.google.com/open?id=1Bs4awq9-ngZQPTkhmAXmWB-BIGeW2A-C"><i class="fas fa-download"></i></a></li>
+                                    <li class="list-inline-item last-item"><a title="Itch" href="https://sweetjp.itch.io/horde-havoc"><i class="fab fa-itch-io"></i></a></li>
+                                </ul>
+
+                                <div class="text-center">
+
+                                    <p class="summary" style="margin-bottom: 5px !important;">My contribution:</p>
+                                    <ul class="contribution">
+                                        <li>Ai Implementation</li>
+                                        <li>VFX Implementation</li>
+                                        <li>Camera Shake</li>
+                                        <li>TrapComponent</li>
+                                        <li>Catapult system</li>
+                                        <li>Custom Mouse</li>
                                     </ul>
                                 </div>
-                                <div class="divider"></div>
-                                <div>
-                                    <ul class="ulInfo2">
-                                        <li>Design</li>
-                                        <li>Design</li>
-                                        <li>Design</li>
-                                        <li>Programming</li>
-                                        <li>Programming</li>
-                                        <li>Programming</li>
-                                        <li>3D Art</li>
-                                        <li>3D Art</li>
-                                        <li>3D Art</li>
-                                        <li>3D Art</li>
-                                        <li>2D Art</li>
-                                        <li>2D Art</li>
-                                        <li>Ljud</li>
-                                    </ul>
-                                </div>
+                            </div><!--//item-->
 
-                            </div>
                         </div>
-                    </div>
-                    <div class="Seperator" style="background-color:lightsalmon;">
+                </section><!--//HordeHavoc-->
 
-                    </div>
-                </ul>
+                <section class="latest section">
 
+                    <div class="section-inner">
+                        <h2 class="heading"></h2>
+                        <div class="content">
 
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="mx-auto portfolio">
-                <ul style="list-style: none; width: 100%;">
-
-                    <!--What Did i do-->
-                    <li>
-                        <!--Poster-->
-                        <div>
-                            <div class="test">
-                                <!--Game Info-->
-                                <div>
-                                    <img alt="Responsive image"
-                                         class="float-right img-fluid GameImage BorderStyleSalmon"
-                                         src="pictures/Ether/titleScreen.jpg"
-                                         style="max-height: 220px;">
+                            <div class="item featured text-center">
+                                <h3 class="title">Eter</h3>
+                                <p class="summary">Prototype: Strategy Space-Sim Multiplayer</p>
+                                <div class="row">
+                                    <div class="featured-image has-ribbon col-sm">
+                                        <img class="img-fluid project-image" src="assets/projects/Ether/titleScreen.jpg" alt="project name" />
+                                    </div>
+                                    <div class="desc text-left infoGrid col-sm">
+                                        <div class="row01">
+                                            <ul class="ulInfo">
+                                                <li>Platform</li>
+                                                <li>Language</li>
+                                                <li>Engine</li>
+                                                <li>Development Time</li>
+                                                <li>Team Size</li>
+                                                <li>Graphics API</li>
+                                            </ul>
+                                        </div>
+                                        <div class="dividerInfo"></div>
+                                        <div class="row02">
+                                            <ul class="ulInfo2">
+                                                <li>Windows</li>
+                                                <li>C#</li>
+                                                <li>Unity 2019.2.6</li>
+                                                <li>1 Week</li>
+                                                <li>3</li>
+                                                <li>DirectX11</li>
+                                            </ul>
+                                        </div>
+                                    </div><!--//desc-->
                                 </div>
-                                <div class="row01">
-                                    <ul class="ulInfo" style="color:lightsalmon;">
-                                        <li>Project Name</li>
-                                        <li>Genre</li>
-                                        <li>Platform</li>
-                                        <li>Language</li>
-                                        <li>Engine</li>
-                                        <li>Development Time</li>
-                                        <li>Team Size</li>
-                                        <li>Graphics API</li>
-                                    </ul>
-                                </div>
-                                <div class="divider" style="background-color:lightsalmon;"></div>
-                                <div class="row02">
-                                    <ul class="ulInfo2" style="color:lightsalmon;">
-                                        <li>(WIP) Eter</li>
-                                        <li>Space sim</li>
-                                        <li>Windows</li>
-                                        <li>C#</li>
-                                        <li>Unity 2019.2.6</li>
-                                        <li>1 Week(as of 10/04)</li>
-                                        <li>3</li>
-                                        <li>DirectX11</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <video autoplay class="BorderStyleSalmon" controls height="100%" loop muted width="100%">
-                                        <source src="pictures/Ether/main.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
 
-                    <li><h6 style="color:lightsalmon;"><b>Server-sided</b></h6>
+                            </div><!--//-->
 
-                        <div class="float-right RightSideImage" style="max-width: 25%;">
-                            <video autoplay class="BorderStyleSalmon " controls loop muted
-                                   style="display:inline-block;"
-                                   width="100%">
-                                <source src="pictures/Ether/path.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                            <hr class="divider" />
 
-                        <div class="BorderStyleSalmon" style="max-width: 74%;">
-                            <p class="leadBox">
-                                <b style="color:lightsalmon;">Astar:</b>
-                            </p>
-                            <p>
-                                A path is calculated on the server, and is sent to the clients.
-                                The Astar takes in consideration of wall-positions foreach cell it evaluates(hard to see as we dont have any graphics for the walls yet).
-                                <br>If the server detects a cell in a current path being occupied(player moved to a path-cell).
-                                It will stop the Npc using that path and calculate a new one for the target cell.
-                                <br>
-                                <br>
-                                <br>
-                            </p>
-                            <div class="float-right ViewCodeButtonSalmon">
-                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                                   data-toggle="collapse" href="#code09" role="button"><b>View Code
-                                    C#</b></a>
-                            </div>
-                        </div>
+                            <div class="item row">
 
-                        <div class="collapse" id="code09" style="max-width: 74%;">
-                            <pre class="prettyprint lang-cs">
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/Ether/main.mp4" muted loop autoplay></video>
+                                    </div>
+                                </a>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Npc ID System</a></h3>
+                                    <p>
+                                        To keep Client and Server communication clean.
+                                        I made the Npc system and most of the other systems ID based.
+                                        An ID is created by both the client/server when a new npc is spawned into the world.
+                                        I then loop through all the npc on the server to update their position.
+                                        If a position is changed... the ID and the new position is sent to the client.
+                                        <br>
+                                        Same thing is going on Client side more or less.
+                                        The Client loops through a list of the IDs checking for changes and updates their visualisation.
+
+                                    </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code10" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C#</a></p>
+                                </div><!--//desc-->
+
+
+                            </div><!--//ID Based System-->
+
+                            <div class="desc col-12 collapse codeContainer" id="code10">
+                                    <pre>
+                                        <code class="language-csharp">
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using Netkraft;
+using Netkraft.Messaging;
+using UnityEngine;
+
+[System.Serializable]
+public class ServerNpcManager
+{
+    [SerializeField] private Server _server;
+    [SerializeField] private Grid _grid;
+    [SerializeField] private Ship _ship;
+
+    private readonly List<ServerNpc> _npcs = new List<ServerNpc>();
+    private int _idCounter = 0;
+
+
+
+    public void Update()
+    {
+        float dt = Time.deltaTime;
+        foreach (ServerNpc npc in _npcs)
+        {
+            if (npc.Path.Count > 1)
+            {
+                npc.timer += dt;
+
+                if (npc.timer < 1f)
+                    continue;
+
+                //Remove completed Targetcell
+                _grid.OccupyCell(npc.TargetCell, false);
+                npc.Path.RemoveAt(npc.Path.Count-1);
+                npc.timer = 0;
+
+                //If we have more Targetcells dont skip
+                if (npc.Path.Count < 1)
+                    continue;
+
+                //Set new TargetCell
+                npc.TargetCell = npc.Path[npc.Path.Count-1];
+                _grid.OccupyCell(npc.TargetCell, true);
+            }
+        }
+
+        Server.Send(new NpcUpdateMessage {ServerNpcs = _npcs.ToArray()});
+    }
+
+    public void AddNpc(Vector2Int gridPosition)
+    {
+        _idCounter++;
+        _npcs.Add(new ServerNpc {Id = _idCounter, TargetCell = gridPosition});
+        Debug.Log("Added Npc with ID: " + _idCounter);
+    }
+
+    public bool AddPathToNpc(int npcId, Vector2Int goal)
+    {
+        foreach (ServerNpc npc in _npcs)
+        {
+            if (npc.Id != npcId)
+                continue;
+
+            npc.Path = ServerAstar.GetPath(npc.TargetCell, goal).ToList();
+            if (npc.Path.Count != 0)
+            {
+                npc.TargetCell = npc.Path[npc.Path.Count - 1];
+                Debug.Log("Server added path!");
+                return true;
+            }
+        }
+
+        Debug.Log("Server could not find Npc ID! Or Path was not reachable!");
+        return false;
+    }
+
+    [Writable]
+    public class ServerNpc
+    {
+        public int Id;
+        public Vector2Int TargetCell;
+        [SkipIndex] public float timer;
+        [SkipIndex] public List<Vector2Int> Path = new List<Vector2Int>();
+    }
+}
+                                        </code>
+                                    </pre>
+
+
+                            </div><!--//content-->
+
+                            <hr class="divider"/>
+
+                            <div class="item row">
+
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/Ether/path.mp4" muted loop autoplay></video>
+                                    </div>
+                                </a>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Pathfinding A*</a></h3>
+                                    <p>
+                                        When a path is requested, the server creates a path with an A* algorithm.
+                                        Said path is only stored on the server, and the path is evaluated by the server with a
+                                        timer for each node in the path array.
+                                        <br>
+                                        The Clients only receive an update object position to lerp towards. This works for all object in the game.
+
+                                    </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code08" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C#</a></p>
+                                </div><!--//desc-->
+
+
+                            </div><!--//Astar-->
+
+                            <div class="desc col-12 collapse codeContainer" id="code08">
+                                    <pre>
+                                        <code class="language-csharp">
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1578,10 +1395,10 @@ using UnityEngine;
 public static class ServerAstar
 {
     private static Grid _grid;
-    private static List<Node> _openList = new List<Node>();
-    private static List<Node> _closedList = new List<Node>();
+    private static List _openList = new List();
+    private static List _closedList = new List();
     private static Node _current;
-    private static List<Node> _adjacencies;
+    private static List _adjacencies;
 
 
     public static void Init(Grid grid)
@@ -1593,7 +1410,7 @@ public static class ServerAstar
     {
         _openList.Clear();
         _closedList.Clear();
-        List<Node> path = new List<Node>();
+        List path = new List();
         Node start = new Node(gridStart);
         _openList.Add(start);
 
@@ -1631,7 +1448,7 @@ public static class ServerAstar
             currentNode = currentNode.Parent;
         }
 
-        List<Vector2Int> temp = new List<Vector2Int>();
+        List temp = new List();
 
         foreach (Node x in path)
         {
@@ -1641,9 +1458,9 @@ public static class ServerAstar
         return temp.ToArray();
     }
 
-    private static List<Node> GetAdjacentNodes(Node n)
+    private static List GetAdjacentNodes(Node n)
     {
-        List<Node> temp = new List<Node>();
+        List temp = new List();
 
         if(n.Position.y + 1 <= _grid.Height)
         {
@@ -1706,397 +1523,290 @@ public class Node
 
 }
 }
-                            </pre>
+                                        </code>
+                                    </pre>
+
+
+                            </div><!--//content-->
+
+                            <hr class="divider"/>
+
+                            <div class="item row">
+
+                                <a class="col-md-4 col-12" target="_blank">
+                                    <div class="">
+                                        <video class="project-image img-fluid" src="assets/projects/Ether/moveables.mp4" muted loop autoplay></video>
+                                    </div>
+                                </a>
+
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Pushables</a></h3>
+                                    <p>
+                                        We are going for a Faster Than Light ripoff mixed with Overcooked.
+                                        So our inventory system should be object-based in our ship.
+                                        To create chaos for the players.
+                                        <br>
+                                        The server detects when a player input is being blocked by a pushable,
+                                        if that pushable has space in the same direction as the input, it will be pushed.
+                                        You can also drag pushables.
+                                        <br>
+                                        As with the pathfinding, the clients only the position to lerp to foreach moveable object in the scene.
+                                        All checks for pushables are done on the server from the movement input provided by the Client player.
+
+                                    </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code09" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C#</a></p>
+                                </div><!--//desc-->
+
+
+                            </div><!--//Pushables-->
+
+                            <div class="desc col-12 collapse codeContainer" id="code09">
+                                    <pre>
+                                        <code class="language-csharp">
+using UnityEngine;
+using System.Collections.Generic;
+
+[System.Serializable]
+public class ServerInteractorManager
+{
+    [SerializeField] private Grid _grid;
+    public Dictionary<Vector2Int, InteractData> _interactables = new Dictionary<Vector2Int, InteractData>();
+
+    public bool LookForInteractable(Vector2Int checkLocation)
+    {
+        if (_interactables.ContainsKey(checkLocation))
+            return true;
+        return false;
+    }
+
+    public void AddItem(Vector2Int position, InteractData interactData)
+    {
+        if (LookForInteractable(position))
+            return;
+
+        _interactables.Add(position, interactData);
+        _grid.OccupyCell(position, true);
+        Server.Send(new InteractablesMessage{MoveTo = position, InteractData = interactData});
+    }
+
+    public bool RemoveItem(Vector2Int checkLocation)
+    {
+        return _interactables.Remove(checkLocation);
+    }
+
+    public void MoveInteractable(Vector2Int checkLocation, Vector2Int input)
+    {
+        _grid.OccupyCell(checkLocation, false);
+        _grid.OccupyCell(checkLocation + input, true);
+
+        InteractData temp = _interactables[checkLocation];
+        temp.Position = checkLocation + input;
+        _interactables.Add(temp.Position,  temp);
+        _interactables.Remove(checkLocation);
+
+        Server.Send(new InteractablesMessage{MoveTo = input, InteractData = temp, CheckLocation = checkLocation});
+    }
+}
+                                        </code>
+                                    </pre>
+
+
+                            </div><!--//content-->
+
+                            <hr class="divider"/>
+
+
                         </div>
+                </section><!--//Eter-->
 
-                        <div class="float-right RightSideImage" style="max-width: 25%; margin-top: 1%;">
-                            <video autoplay class="BorderStyleSalmon" controls loop muted
-                                   style="display:inline-block;"
-                                   width="100%">
-                                <source src="pictures/HordeHavoc/catapult.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
+                <section class="latest section">
 
-                        <div class="BorderStyleSalmon" style="max-width: 74%; margin-top: 1%;">
-                            <p class="leadBox">
-                                <b style="color:lightsalmon;">Moveables:</b>
-                            </p>
-                            <p>
-                                We are going for a Faster Than Light ripoff mixed with Overcooked. So our inventory system should be
-                                object-based in our ship. To create chaos for the players.<br>
-                                The server detects when a player input is being blocked by a moveable, if that moveable has space in
-                                the same direction as the input, it will be pushed. You can also drag moveables.
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
+                    <div class="section-inner">
+                        <h2 class="heading"></h2>
+                        <div class="content">
 
-
-                            </p>
-
-                            <div class="float-right ViewCodeButtonSalmon">
-                                <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                                   data-toggle="collapse" href="#code04" role="button"><b>View Code
-                                    C++</b></a>
+                            <div class="item featured text-center">
+                                <h3 class="title">Systems</h3>
+                                <p class="summary">Code I done that has never been used in a game yet!</p>
                             </div>
-                        </div>
 
-                        <div class="collapse" id="code04" style="max-width: 74% !important;">
-                             <pre class="prettyprint lang-cpp">
-#include "BSCatapultPreasure.h"
-#include "Components/BSSelectableComponent.h"
-#include <TimerManager.h>
+                            <hr class="divider" />
 
-ABSCatapultPreasure::ABSCatapultPreasure()
-{
-	PrimaryActorTick.bCanEverTick = true;
+                            <div class="item featured text-center">
+                                <h3 class="title text-left">Procedual Animated Horde</h3>
 
-}
+                                <iframe width="100%" height="500px" src="assets/Unity/index.html"></iframe>
 
-void ABSCatapultPreasure::BeginPlay()
-{
-	Super::BeginPlay();
+                                <ul class="social list-inline">
+                                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv/HordeHavoc"><i class="fab fa-github-alt"></i></a></li>
+                                    <li class="list-inline-item"><a title="Download" href="https://drive.google.com/open?id=1Bs4awq9-ngZQPTkhmAXmWB-BIGeW2A-C"><i class="fas fa-download"></i></a></li>
+                                    <li class="list-inline-item last-item"><a title="Itch" href="https://sweetjp.itch.io/horde-havoc"><i class="fab fa-itch-io"></i></a></li>
+                                </ul>
 
-	if (Collider != nullptr)
-	{
-		Collider->OnComponentBeginOverlap.AddDynamic(this, &ABSCatapultPreasure::BeginOverlap);
-		Collider->OnComponentEndOverlap.AddDynamic(this, &ABSCatapultPreasure::EndOverlap);
-		Collider->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
-		Collider->SetCollisionProfileName(FName("DeathComponent"));
+                                <div class="text-left">
 
-		FTimerManager& TimerManager = GetWorldTimerManager();
-		TimerManager.ClearTimer(untilNextLaunch);
-		TimerManager.ClearTimer(delayedDisable);
-	}
-}
-
-void ABSCatapultPreasure::BeginOverlap(UPrimitiveComponent* OverlappedComponent,
-                                 AActor* OtherActor, UPrimitiveComponent* OtherComponent,
-                                 int32 OtherBodyIndex, bool bFrameSweep, const FHitResult& SweepResults)
-{
-	if (Active && Target != nullptr)
-	{
-		if (ABSAIAgent* Orc = Cast<ABSAIAgent>(OtherActor))
-		{
-			if (Orc->IsDead() != true)
-			{
-				FTimerManager& TimerManager = GetWorldTimerManager();
-
-				FVector offset = Collider->GetCenterOfMass() +=
-                                 FVector(FMath::RandRange(-orcSpacing, orcSpacing), 0.0f,
-                                 FMath::RandRange(-orcSpacing, orcSpacing));
-
-				if (TimerManager.GetTimerRemaining(untilNextLaunch) <= 0.0f)
-				{
-					TimerManager.ClearTimer(untilNextLaunch);
-					TimerManager.SetTimer(untilNextLaunch, this, &ABSCatapultPreasure::Launch, Time, false);
-
-					if (OnDelayStart.IsBound())
-						OnDelayStart.Broadcast();
-				}
-
-				if(!agentList.Contains(Orc))
-				{
-					agentList.Add(Orc);
-				}
-
-			}
-		}
-	}
-}
-
-void ABSCatapultPreasure::Launch()
-{
-
-	for (int i = 0; i < agentList.Num(); i++)
-	{
-		if (UBSProjectileComponent* ProjectileComponent = agentList[i]->GetProjectileComp())
-		{
-			if (ProjectileComponent->Activated != true)
-			{
-				ProjectileComponent->SetTarget(Target->GetActorLocation());
-			}
-		}
-
-	}
-	agentList.Empty();
-
-	if (OnProjectileFire.IsBound())
-		OnProjectileFire.Broadcast();
-}
-
-void ABSCatapultPreasure::EndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex)
-{
-	if (ABSAIAgent* Orc = Cast<ABSAIAgent>(OtherActor))
-	{
-		agentList.Remove(Orc);
-		Orc->StopMovement();
-
-	}
-}
-
-</pre>
-                        </div>
-
-
-
-                    <div class="linkTab4">
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Github" src="pictures/icons/github.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a target="_blank" class="textLink" href="https://github.com/LarssonSv/BeatBorn"
-                               style="color: lightsalmon !Important;">Github</a>
-                        </div>
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Build" src="pictures/icons/downloadIcon.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a class="textLink"
-                               href="https://drive.google.com/open?id=1Bs4awq9-ngZQPTkhmAXmWB-BIGeW2A-C"
-                               style="color: lightsalmon !Important;">Build</a>
-                        </div>
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Members" src="pictures/icons/people.png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a aria-controls="collapseExample" aria-expanded="false" class="textLink"
-                               data-toggle="collapse" href="#collapseExample"
-                               role="button" style="color: lightsalmon !Important;">Members</a>
-                        </div>
-                        <div style="height: 100%; width: 100%;">
-                            <img alt="Members" src="pictures/icons/itch(2).png"
-                                 style="max-width: 100%; max-height: 100%; margin-bottom: 5px;">
-                            <a target="_blank" class="textLink"
-                               href="https://sweetjp.itch.io/horde-havoc?secret=NHCaAbwJdlHX5THOuyfoenVJ3o"
-                               style="color: lightsalmon !Important;">Itch.io</a>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseExample">
-                        <div>
-                            <div class="MemberTab2">
-                                <div>
-                                    <ul class="ulInfo">
-                                        <li>Hanna Fridén</li>
-                                        <li>Jonas Petersson</li>
-                                        <li>Anton Samuelsson</li>
-                                        <li>Simon Larsson</li>
-                                        <li>Per Åkerström</li>
-                                        <li>Suat Kückükgöl</li>
-                                        <li>Corinne Boman</li>
-                                        <li>Attila Herczeg</li>
-                                        <li>Hanna Stenow</li>
-                                        <li>Mikaela Marti</li>
-                                        <li>Nicolas Lennman</li>
-                                        <li>Eddi Pettersson</li>
-                                        <li>Jonas Petersson</li>
-
+                                    <p class="summary" style="margin-bottom: 5px !important;">My contribution:</p>
+                                    <ul class="contribution">
+                                        <li>Ai Implementation</li>
+                                        <li>VFX Implementation</li>
+                                        <li>Camera Shake</li>
+                                        <li>TrapComponent</li>
+                                        <li>Catapult system</li>
+                                        <li>Custom Mouse</li>
                                     </ul>
                                 </div>
-                                <div class="divider"></div>
-                                <div>
-                                    <ul class="ulInfo2">
-                                        <li>Design</li>
-                                        <li>Design</li>
-                                        <li>Design</li>
-                                        <li>Programming</li>
-                                        <li>Programming</li>
-                                        <li>Programming</li>
-                                        <li>3D Art</li>
-                                        <li>3D Art</li>
-                                        <li>3D Art</li>
-                                        <li>3D Art</li>
-                                        <li>2D Art</li>
-                                        <li>2D Art</li>
-                                        <li>Ljud</li>
-                                    </ul>
-                                </div>
-
-                            </div>
+                            </div>/
                         </div>
-                    </div>
-                    <div class="Seperator" style="background-color:lightsalmon;">
+                </section>
 
-                    </div>
-                </ul>
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Stage/Sound Technician - <span class="place"><a href="#">Stockholm City</a></span> <span class="year">(2015 Q2 - Present)</span></h3>
+                                <p> Jack of all traits kind of job</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Store Manager/Salesmen - <span class="place"><a href="#">Kjell & Company</a></span> <span class="year">(2017 Q1 - 2018 Q3)</span></h3>
+                                <p>Logistics, Salesmen and summer store manager handling inventory, market analysis and job schedules</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Logistics Worker - <span class="place"><a href="#">Lundagrossisten</a></span> <span class="year">(2014 Q3 - 2015 Q3)</span></h3>
+                                <p>Handling incoming/outgoing orders, cleaning and sorting/optimizing our storage facility. "Selfgoing"</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Fast Food Worker - <span class="place"><a href="#">Max Burgers</a></span> <span class="year">(2017 Q2 - 2017 Q4)</span></h3>
+                                <p></p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="83%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Unity<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Tools/Multi-threading/Larger-Systems"><i class="fas fa-info-circle"></i>Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="90%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="level-title">Unreal<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="C++/Blueprint/Lua"><i class="fas fa-info-circle"></i>Good</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="70%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
+
+                            <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Hobby developer, small business websites"><i class="fas fa-info-circle"></i>Moderate</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="65%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
 
 
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="education" style="background-color: rgba(0,0,0,0.1);">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>Education</h2>
-                <div class="EducationTab">
-                    <div class="box">
-                        <h4 class="box-Text">Future Games</h4>
-                        <ul style="list-style-type: none">
-                            <li class="box-subtext">Game Programming</li>
-                            <li><img alt="FutureGames" src="pictures/icons/FG.png"
-                                     style="height: 70px; width: 70px; border-radius: 50%; border: 2px solid white;">
-                            </li>
-                            <li>2.5 Years</li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <h4 class="box-Text">Södertörns HighSchool</h4>
-                        <ul style="list-style-type: none">
-                            <li class="box-subtext">Game-Design/Scripting</li>
-                            <li><img alt="Södertörns HighSchool" src="pictures/icons/sodertornWhiteText.png"
-                                     style="height: 70px; width: 160px;"></li>
-                            <li>1 Year</li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <h4 class="box-Text">MediaGymnasiet</h4>
-                        <ul style="list-style-type: none">
-                            <li class="box-subtext">Information Technology and Media Technology</li>
-                            <li><img alt="MediaGymnasiet" src="pictures/icons/mediagymnasiet.jpg"
-                                     style="height: 70px; width: 70px; border-radius: 50%; border: 2px solid white;">
-                            </li>
-                            <li>3 Years</li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <h4 class="box-Text">Other Merits</h4>
-                        <ul style="list-style-type: none">
-                            <li class="box-subtext">Kjell Academy Electricity And Digital/Analog signals</li>
-                            <li class="box-subtext">Cardiopulmonary rescue 2014 & 2018</li>
-                            <li class="box-subtext">Too many cooking shows</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                                <div class="item">
+                                <h3 class="level-title">Adobe Package<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Good knowledge in After Effects, Photoshop, Illustrator"><i class="fas fa-info-circle"></i>Good</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="70%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
 
-<section id="work">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>Working Experience</h2>
-                <div class="EducationTab">
-                    <div class="box">
-                        <h4 class="box-Text">Store Manager/Salesmen</h4>
-                        <ul style="list-style-type: none">
-                            <li class="box-subtext">Kjell & Company</li>
-                            <li><img alt="Kjell & Company" class="WorkImg" src="pictures/icons/kjell.png"></li>
-                            <li style="margin-top: 5px;">2017 Q1 - 2018 Q3</li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <h4 class="box-Text">Stage/Sound Technician</h4>
-                        <ul style="list-style-type: none">
-                            <li class="box-subtext">Stockholm's City</li>
-                            <li><img alt="Stockholm's City" class="WorkImg" src="pictures/icons/kungsan.png"></li>
-                            <li style="margin-top: 5px;">2015 Q2 - Current</li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <h4 class="box-Text">Logistics Worker</h4>
-                        <ul style="list-style-type: none">
-                            <li class="box-subtext">Lundagrossisten</li>
-                            <li><img alt="Lundagrossisten" class="WorkImg" src="pictures/icons/lunda.png"></li>
-                            <li style="margin-top: 5px;">2014 Q3 & 2015 Q3</li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <h4 class="box-Text">Fast Food Worker</h4>
-                        <ul style="list-style-type: none">
-                            <li class="box-subtext">Max Burgers</li>
-                            <li><img alt="Burgers" class="WorkImg" src="pictures/icons/max.png"></li>
-                            <li style="margin-top: 5px;">2017 Q2 & 2017 Q3</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section>
 
-<section id="contact" style="background-color: rgba(0,0,0,0.1);">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <h2>Contact Me</h2>
-                <div class="ThreeInRow">
-                    <div class="ContactTab">
-                        <form action="https://formspree.io/simon.larsson1997@outlook.com" method="POST">
-                            <ul>
-                                <li><span>Your Name:</span></li>
-                                <li><input name="name" placeholder="Name" type="text"></li>
-                                <li><span>Your Mail:</span></li>
-                                <li><input name="_replyto" placeholder="example@mail.com" type="email"></li>
-                                <li><span>Your Text:</span></li>
-                                <li><textarea name="message" placeholder="Text..." rows="5"></textarea></li>
-                                <li><input type="submit" value="Send"></li>
-                            </ul>
-                        </form>
-                    </div>
-                    <div class="ContactInfo">
-                        <div>
-                            <ul style="float: right; text-align: right; margin-top: 2%;">
-                                <li>Name</li>
-                                <li>Age</li>
-                                <li>Phone</li>
-                                <li>Mail</li>
-                                <li>Current Location</li>
-                                <li>CV</li>
-                            </ul>
                         </div>
-                        <div style="background-color: #0c5460; height: 100%;"></div>
-                        <div>
-                            <ul style="float: left; text-align: left; margin-top: 2%;">
-                                <li>Simon Larsson</li>
-                                <li>22 Years</li>
-                                <li><a href="tel:+46736631997">+46736631997</a></li>
-                                <li><a href="mailto:Simon.Larsson1997@outlook.com">Simon.Larsson1997@outlook.com</a>
-                                </li>
-                                <li>Stockholm/Liljeholmen</li>
-                                <li>
-                                    <a href="https://drive.google.com/uc?export=download&id=1S_One0gBUaPiU9I6r7Pe1c4JgOqdOcDO">Download
-                                        PDF</a></li>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Game Programming</h3>
+                                <h4 class="university">Future Games <span class="year">(2018-Present)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Game Design & Scripting</h3>
+                                <h4 class="university">Södertörns College <span class="year">(2017-108)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Information and Media Technology</h3>
+                                <h4 class="university">MediaGymnasiet <span class="year">(2013-2016)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Stockholm, Sweden</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">simonlarsson1997@outlook.com</a></li>
+                                <li><i class="fas fa-phone"></i><span class="sr-only">Website:</span><a href="tel:+46 73-663-1997">+46 73-663-1997</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.simonlarsson.nu</a></li>
                             </ul>
-                        </div>
-                    </div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
 
-
-<!-- Footer -->
-<footer class="py-5 bg-dark" style="background-image: url('pictures/bg.jpg');">
-    <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Simon Larsson 2019</p>
-    </div>
-    <!-- /.container -->
-</footer>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom JavaScript for this theme -->
-<script src="js/scrolling-nav.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script src="assets/js/prism.js"></script>
 </body>
+</html> 
 
-</html>

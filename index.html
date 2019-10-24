@@ -22,6 +22,9 @@
 
     <!-- Prism CSS -->
     <link href="assets/css/prism.css" rel="stylesheet">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
     
 </head> 
 
@@ -59,7 +62,7 @@
                             <div class="row">
 
                                 <div class="featured-image has-ribbon col-sm">
-                                    <img class="img-fluid project-image" src="assets/projects/BeatBorn/beatbornText.jpg" alt="project name" />
+                                    <img class="img-fluid project-image rounded" src="assets/projects/BeatBorn/beatbornText.jpg" alt="project name" />
                                     <div class="ribbon">
                                         <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
                                     </div>
@@ -96,7 +99,7 @@
 
                             <div class="item row">
 
-                                <a class="col-md-4 col-12" target="_blank">
+                                <a href="assets/projects/BeatBorn/toolimage.png" data-fancybox class="col-md-4 col-12" data-fancybox target="_blank">
                                     <div class="scrollableImage">
                                     <img style="width:100%;" class="img-fluid project-image" src="assets/projects/BeatBorn/toolimage.png" alt="project name" />
                                     </div>
@@ -371,11 +374,11 @@ public class RoundScriptableEdit : Editor
                             <div class="item row">
 
                                 <div class="desc col-sm">
-                                    <a target="_blank">
-                                        <img style="width:125%;" class="img-fluid project-image" src="assets/projects/BeatBorn/flowchart.jpg" alt="project name" />
+                                    <a href="assets/projects/BeatBorn/flowchart.jpg" data-fancybox target="_blank">
+                                        <img style="width:125%;" class="rounded img-fluid project-image" src="assets/projects/BeatBorn/flowchart.jpg" alt="project name" />
                                     </a>
-                                    <a target="_blank">
-                                        <video style="margin-top: 10px" class="img-fluid project-image" src="assets/projects/BeatBorn/Movie.mp4" loop muted autoplay></video>
+                                    <a target="_blank" href="assets/projects/BeatBorn/ulti.mp4" data-fancybox>
+                                        <video style="margin-top: 10px" class="rounded img-fluid project-image" src="assets/projects/BeatBorn/ulti.mp4" loop muted autoplay></video>
                                     </a>
                                 </div>
 
@@ -570,7 +573,7 @@ public class AiController : MonoBehaviour, IDamageable
                             <div class="item featured text-center">
                                 <h3 class="title">Final Words</h3>
                                 <div class="featured-image has-ribbon">
-                                    <video class="img-fluid project-image" style="border: solid 3px green;" src="assets/projects/BeatBorn/bbnl.mp4" loop muted autoplay></video>
+                                    <video class="rounded img-fluid project-image" style="border: solid 3px green;" src="assets/projects/BeatBorn/bbnl.mp4" loop muted autoplay></video>
                                     <div class="ribbon">
                                         <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
                                     </div>
@@ -612,7 +615,7 @@ public class AiController : MonoBehaviour, IDamageable
                                 <div class="row">
 
                                     <div class="featured-image has-ribbon col-sm">
-                                        <img class="img-fluid project-image" src="assets/projects/HordeHavoc/hordehavoc.png" alt="project name" />
+                                        <img class="rounded img-fluid project-image" src="assets/projects/HordeHavoc/hordehavoc.png" alt="project name" />
                                         <div class="ribbon">
                                             <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
                                         </div>
@@ -650,10 +653,10 @@ public class AiController : MonoBehaviour, IDamageable
 
                                 <a class="col-md-4 col-12" target="_blank">
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/SmashLoop.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/HordeHavoc/SmashLoop.mp4" muted loop autoplay></video>
                                     </div>
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/gearbreak.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/HordeHavoc/gearbreak.mp4" muted loop autoplay></video>
                                     </div>
                                 </a>
 
@@ -734,7 +737,7 @@ void UBSDeathTrapComponent::BeginOverlap(UPrimitiveComponent* OverlappedComponen
 
                                 <a class="col-md-4 col-12" target="_blank">
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/catapult.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/HordeHavoc/catapult.mp4" muted loop autoplay></video>
                                     </div>
                                 </a>
 
@@ -933,10 +936,10 @@ void UBSProjectileComponent::SetTarget(const FVector& worldLocation)
 
                                 <a class="col-md-4 col-12" target="_blank">
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/destroy.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/HordeHavoc/destroy.mp4" muted loop autoplay></video>
                                     </div>
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/camera.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/HordeHavoc/camera.mp4" muted loop autoplay></video>
                                     </div>
                                 </a>
 
@@ -1002,10 +1005,10 @@ void UBSCameraShaker::TickComponent(float DeltaTime, ELevelTick TickType, FActor
 
                                 <a class="col-md-4 col-12" target="_blank">
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/destroy.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/HordeHavoc/destroy.mp4" muted loop autoplay></video>
                                     </div>
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/camera.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/HordeHavoc/camera.mp4" muted loop autoplay></video>
                                     </div>
                                 </a>
 
@@ -1106,7 +1109,7 @@ void ABSPlayerController::SetMoveLocation()
 
                                 <a class="col-md-4 col-12" target="_blank">
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/HordeHavoc/panic.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/HordeHavoc/panic.mp4" muted loop autoplay></video>
                                     </div>
                                 </a>
 
@@ -1165,7 +1168,7 @@ void ABSAIAgent::PanicMode()
                             <div class="item featured text-center">
                                 <h3 class="title">Final Words</h3>
                                 <div class="featured-image has-ribbon">
-                                    <video class="img-fluid project-image" style="border: solid 3px green;" src="assets/projects/HordeHavoc/Horde%20Havoc%20Trailer.mp4" loop muted autoplay></video>
+                                    <video class="rounded img-fluid project-image" style="border: solid 3px green;" src="assets/projects/HordeHavoc/Horde%20Havoc%20Trailer.mp4" loop muted autoplay></video>
                                     <div class="ribbon">
                                         <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
                                     </div>
@@ -1205,7 +1208,7 @@ void ABSAIAgent::PanicMode()
                                 <p class="summary">Prototype: Strategy Space-Sim Multiplayer</p>
                                 <div class="row">
                                     <div class="featured-image has-ribbon col-sm">
-                                        <img class="img-fluid project-image" src="assets/projects/Ether/titleScreen.jpg" alt="project name" />
+                                        <img class="rounded img-fluid project-image" src="assets/projects/Ether/titleScreen.jpg" alt="project name" />
                                     </div>
                                     <div class="desc text-left infoGrid col-sm">
                                         <div class="row01">
@@ -1240,7 +1243,7 @@ void ABSAIAgent::PanicMode()
 
                                 <a class="col-md-4 col-12" target="_blank">
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/Ether/main.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/Ether/main.mp4" muted loop autoplay></video>
                                     </div>
                                 </a>
 
@@ -1363,7 +1366,7 @@ public class ServerNpcManager
 
                                 <a class="col-md-4 col-12" target="_blank">
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/Ether/path.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/Ether/path.mp4" muted loop autoplay></video>
                                     </div>
                                 </a>
 
@@ -1535,7 +1538,7 @@ public class Node
 
                                 <a class="col-md-4 col-12" target="_blank">
                                     <div class="">
-                                        <video class="project-image img-fluid" src="assets/projects/Ether/moveables.mp4" muted loop autoplay></video>
+                                        <video class="rounded project-image img-fluid" src="assets/projects/Ether/moveables.mp4" muted loop autoplay></video>
                                     </div>
                                 </a>
 
@@ -1638,26 +1641,224 @@ public class ServerInteractorManager
                                 <iframe width="100%" height="500px" src="assets/Unity/index.html"></iframe>
 
                                 <ul class="social list-inline">
-                                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv/HordeHavoc"><i class="fab fa-github-alt"></i></a></li>
-                                    <li class="list-inline-item"><a title="Download" href="https://drive.google.com/open?id=1Bs4awq9-ngZQPTkhmAXmWB-BIGeW2A-C"><i class="fas fa-download"></i></a></li>
-                                    <li class="list-inline-item last-item"><a title="Itch" href="https://sweetjp.itch.io/horde-havoc"><i class="fab fa-itch-io"></i></a></li>
+                                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv/ProcedualAnimations"><i class="fab fa-github-alt"></i></a></li>
                                 </ul>
 
                                 <div class="text-left">
 
-                                    <p class="summary" style="margin-bottom: 5px !important;">My contribution:</p>
-                                    <ul class="contribution">
-                                        <li>Ai Implementation</li>
-                                        <li>VFX Implementation</li>
-                                        <li>Camera Shake</li>
-                                        <li>TrapComponent</li>
-                                        <li>Catapult system</li>
-                                        <li>Custom Mouse</li>
+                                    <p class="summary" style="margin-bottom: 5px !important;">What I Did:</p>
+                                    <ul class="">
+                                        <li>Translation with Root Motion</li>
+                                        <li>Inverse Kinematic(IK) 2 chain for each leg</li>
+                                        <li>Boids Flocking that adds velocity to Root Motion Translation</li>
+                                        <li>Cubic Bezier Curve Based Leg movement</li>
                                     </ul>
+                                    <p>Each leg has a "Home-Point". When a leg distance is more than X amount, that leg is lerped towards the Home-Point. I also have some overstep programmed in, each leg will overstep the Home-Point so the leg does not lag behind when moving fast.
+                                    <br>This is done by a <b>Cubic Bezier Curve</b> with some added <b>Easing</b>. I also raise the leg a little bit so it is not dragged over the floor. That would look weired.
+                                        <br>There is some more number tweaking to be done, but the proof of concept is their.
+                                    </p>
+                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code11" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C#</a></p>
                                 </div>
-                            </div>/
+                            </div>
+
+                            <div class="desc col-12 collapse codeContainer" id="code11">
+                                    <pre>
+                                        <code class="language-csharp">
+public class ProceduralAnimeController : MonoBehaviour
+{
+    [SerializeField] private Transform _target;
+
+    [Header("Head")] [SerializeField] private Transform _headBone;
+    [SerializeField] private float _headMaxTurnAngle;
+    [SerializeField] private float _headTrackingSpeed;
+
+    [Header("Eyes")] [SerializeField] private Transform _leftEyeBone;
+    [SerializeField] private Transform _rightEyeBone;
+    [SerializeField] private float _eyeTrackingSpeed;
+    [SerializeField] private float _leftEyeMaxYRotation;
+    [SerializeField] private float _leftEyeMinYRotation;
+    [SerializeField] private float _rightEyeMaxYRotation;
+    [SerializeField] private float _rightEyeMinYRotation;
+
+    [Header("Legs")]
+    [SerializeField] private LegIKStepper _frontLeftLegStepper;
+    [SerializeField] private LegIKStepper _frontRightLegStepper;
+    [SerializeField] private LegIKStepper _backLeftLegStepper;
+    [SerializeField] private LegIKStepper _backRightLegStepper;
+
+    [Header("Movement")]
+    [SerializeField] private float _turnSpeed;
+    [SerializeField] private float _moveSpeed;
+    [SerializeField] private float _turnAcceleration;
+    [SerializeField] private float _moveAcceleration;
+    [SerializeField] private float _minDistToTarget;
+    [SerializeField] private float _maxDistToTarget;
+    [SerializeField] private float _maxAngelToTarget;
+
+    public Vector3 _currentVelocity;
+    public Vector3 FlockAdditon;
+    private float _currentAngularVelocity;
+
+    private void Start()
+    {    //Set our Stepper to world position. Did this so we can save the whole object as a prefab.
+        _frontLeftLegStepper.gameObject.transform.parent = null;
+        _frontRightLegStepper.gameObject.transform.parent = null;
+        _backLeftLegStepper.gameObject.transform.parent = null;
+        _backRightLegStepper.gameObject.transform.parent = null;
+        StartCoroutine(LegUpdate());
+    }
+
+
+    void RootMotionUpdate(float dt)
+    {
+        //Rotation
+        Vector3 towardTarget = _target.position - transform.position;
+        Vector3 towardTargetProjected = Vector3.ProjectOnPlane(towardTarget, transform.up);
+        float angelToTarget = Vector3.SignedAngle(transform.forward, towardTargetProjected, transform.up);
+        float targetAngularVelocity = 0;
+
+        if (Mathf.Abs(angelToTarget) > _maxAngelToTarget)
+        {
+            if (angelToTarget > 0)
+                targetAngularVelocity = _turnSpeed;
+            else
+                targetAngularVelocity = -_turnSpeed;
+        }
+
+        _currentAngularVelocity = Mathf.Lerp(_currentAngularVelocity, targetAngularVelocity,
+            1 - Mathf.Exp(-_turnAcceleration * Time.deltaTime));
+
+        transform.Rotate(0, _currentAngularVelocity * dt, 0, Space.World); //Y in worldspace
+
+        //Position
+        Vector3 targetVelocity = Vector3.zero;
+
+        if (Mathf.Abs(angelToTarget) < 90)
+        {
+            float distToTarget = Vector3.Distance(transform.position, _target.position);
+
+            if (distToTarget > _maxDistToTarget)
+                targetVelocity = _moveSpeed * towardTargetProjected.normalized;
+
+            else if (distToTarget < _minDistToTarget)
+                targetVelocity = (_moveSpeed / 2f) * -towardTargetProjected.normalized;
+
+        }
+
+        _currentVelocity = Vector3.Lerp(_currentVelocity, targetVelocity, 1 - Mathf.Exp(-_moveAcceleration * dt));
+        transform.position += _currentVelocity * dt;
+
+        if((transform.position - _target.position).magnitude > 5f)
+            transform.position += FlockAdditon * dt;
+
+    }
+
+    private void LateUpdate()
+    {
+        float dt = Time.deltaTime;
+
+        RootMotionUpdate(dt);
+        HeadTrackingUpdate(dt);
+        EyeTrackingUpdate(dt);
+    }
+
+    IEnumerator LegUpdate()
+    {
+        while (true)
+        {
+            do
+            {
+                _frontLeftLegStepper.TryMove();
+                _backRightLegStepper.TryMove();
+                yield return null;
+
+            } while (_frontLeftLegStepper.Moving || _backRightLegStepper.Moving);
+
+            do
+            {
+                _frontRightLegStepper.TryMove();
+                _backLeftLegStepper.TryMove();
+                yield return null;
+            } while (_frontRightLegStepper.Moving || _backLeftLegStepper.Moving);
+        }
+    }
+}
+                                        </code>
+                                    </pre>
+
+
+                            </div><!--//content-->
+
                         </div>
-                </section>
+                </section><!--//Systems-->
+
+                <section class="latest section">
+
+                    <div class="section-inner">
+                        <h2 class="heading"></h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+                                <h3 class="title">Graphics API implementations</h3>
+                                <p class="summary">I will not take full credit as a lot of code is heavily inspired by Guides online.
+                                    I am showing these to prove that I have a good general understanding of how Graphics APIs are implemented.
+                                </p>
+                            </div>
+
+                            <hr class="divider" />
+
+                            <div class="item featured text-center">
+                                <h3 class="title text-left">OpenGL Shaders</h3>
+
+                                <div class="">
+                                    <video class="rounded project-image img-fluid" src="assets/projects/Engines/opengl.mp4" muted loop autoplay></video>
+                                </div>
+
+                                <ul class="social list-inline">
+                                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv/ProcedualAnimations"><i class="fab fa-github-alt"></i></a></li>
+                                </ul>
+
+                                <div class="text-left">
+                                    <p class="summary" style="margin-bottom: 5px !important;">Features:</p>
+                                    <ul>
+                                        <li>Camera with ProjectionView</li>
+                                        <li>Matrix based Meshes
+                                        <li>Load Shaders from a single file with #type separation (My addison)</li>
+                                        <li>Uniform Map Optimization (My addison)</li>
+                                        <li>GLSL
+                                            <ul>
+                                                <li>Spotlights</li>
+                                                <li>Pointlight</li>
+                                                <li>Ambient Lightning</li>
+                                                <li>Direct Lightning shadows</li>
+                                                <li>Skyboxes</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <a href="http://emilstrom.com/"><p class="summary">Big Thanks to Emil Ström for learning me this</p></a>
+                                </div>
+                            </div>
+
+                            <hr class="divider" />
+
+                            <div class="item featured text-center">
+                                <h3 class="title text-left">DirectX12 Initialisation</h3>
+
+                                <div class="">
+                                    <img alt="DirectX12" class="rounded project-image img-fluid" src="assets/projects/Engines/dx12.png" />
+                                </div>
+
+                                <ul class="social list-inline">
+                                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv/ProcedualAnimations"><i class="fab fa-github-alt"></i></a></li>
+                                </ul>
+
+                                <div class="text-left">
+                                    <a href="https://se.linkedin.com/in/sebastian-tryscien-875b13171"><p class="summary">Big Thanks to Sebastian Tryscien for learning me this</p></a>
+                                </div>
+                            </div>
+
+                        </div>
+                </section><!--//Engines-->
 
                 <section class="experience section">
                     <div class="section-inner">
@@ -1721,7 +1922,7 @@ public class ServerInteractorManager
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
 
-                            <div class="item">
+                                <div class="item">
                                 <h3 class="level-title">Unreal<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="C++/Blueprint/Lua"><i class="fas fa-info-circle"></i>Good</span></h3>
                                 <div class="level-bar">
                                     <div class="level-bar-inner" data-level="70%">
@@ -1729,15 +1930,13 @@ public class ServerInteractorManager
                                 </div><!--//level-bar-->
                             </div><!--//item-->
 
-                            <div class="item">
+                                <div class="item">
                                     <h3 class="level-title">HTML5, CSS3<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Hobby developer, small business websites"><i class="fas fa-info-circle"></i>Moderate</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="65%">
                                         </div>
                                     </div><!--//level-bar-->
                                 </div><!--//item-->
-
-
 
                                 <div class="item">
                                 <h3 class="level-title">Adobe Package<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Good knowledge in After Effects, Photoshop, Illustrator"><i class="fas fa-info-circle"></i>Good</span></h3>
@@ -1747,8 +1946,15 @@ public class ServerInteractorManager
                                 </div><!--//level-bar-->
                             </div><!--//item-->
 
+                                <div class="item">
+                                <h3 class="level-title">GLSL/HLSL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Basic</span></h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="50%">
+                                    </div>
+                                </div><!--//level-bar-->
+                            </div><!--//item-->
 
-                        </div>
+                            </div>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
@@ -1763,7 +1969,7 @@ public class ServerInteractorManager
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> Game Design & Scripting</h3>
-                                <h4 class="university">Södertörns College <span class="year">(2017-108)</span></h4>
+                                <h4 class="university">Södertörns College <span class="year">(2017-2018)</span></h4>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> Information and Media Technology</h3>
@@ -1807,6 +2013,8 @@ public class ServerInteractorManager
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="assets/js/prism.js"></script>
+    <!--FancyBox-->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
 </body>
 </html> 
 

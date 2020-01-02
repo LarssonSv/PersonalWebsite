@@ -15,6 +15,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.back-to-top {
+float: right;
+}
+
 .codeContainer {
   max-height: 500px !important;
   overflow-y: scroll;

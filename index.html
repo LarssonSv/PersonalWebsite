@@ -27,24 +27,39 @@
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.min.css">
     
 </head>
+
+<Header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Featured</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse center-block" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Games</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Prototypes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Engines</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+</Header>
+
 <body style="background: url('assets/projects/wavegridDark.png');">
+
     <!-- ******HEADER****** --> 
-    <header style="background: url('assets/projects/wavegrid.png');" class="header" >
-        <div class="container clearfix">
-            <img class="profile-image img-fluid float-left rounded" src="assets/images/profile.jpg" alt="Simon Larsson">
-                <h1 class="name">Simon Larsson</h1>
-                <h2 class="desc">Game Programmer</h2>
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a title="Linkedin" href="https://www.linkedin.com/in/simon-larsson-389830182"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv"><i class="fab fa-github-alt"></i></a></li>
-                    <li class="list-inline-item"><a title="Download CV" href="https://drive.google.com/file/d/1ddiVWRvPNYfKxIS-CsvGvPZMK9KeLOz_/view?usp=sharing"><i class="fas fa-portrait"></i></a></li>
-                    <li class="list-inline-item"><a title="Phone" href="tel:0736631997"><i class="fas fa-phone"></i></a></li>
-                    <li class="list-inline-item last-item"><a title="Mail" href="mailto:simon.larsson1997@outlook.com"><i class="fas fa-envelope "></i></a></li>
-                </ul>
-            </div><!--//profile-->
-        </div><!--//container-->
-    </header><!--//header-->
-    
     <div class="container sections-wrapper" >
         <div class="row">
             <div class="primary col-lg-8 col-12">
@@ -1882,36 +1897,38 @@ public class ProceduralAnimeController : MonoBehaviour
                         </div>
                 </section><!--//Engines-->
 
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Stage/Sound Technician - <span class="place"><a href="#">Stockholm City</a></span> <span class="year">(2015 Q2 - Present)</span></h3>
-                                <p> Jack of all traits kind of job</p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Store Manager/Salesmen - <span class="place"><a href="#">Kjell & Company</a></span> <span class="year">(2017 Q1 - 2018 Q3)</span></h3>
-                                <p>Logistics, Salesmen and summer store manager handling inventory, market analysis and job schedules</p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Logistics Worker - <span class="place"><a href="#">Lundagrossisten</a></span> <span class="year">(2014 Q3 - 2015 Q3)</span></h3>
-                                <p>Handling incoming/outgoing orders, cleaning and sorting/optimizing our storage facility. "Selfgoing"</p>
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <h3 class="title">Fast Food Worker - <span class="place"><a href="#">Max Burgers</a></span> <span class="year">(2017 Q2 - 2017 Q4)</span></h3>
-                                <p></p>
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-
+              
             </div><!--//primary-->
             <div class="secondary col-lg-4 col-12">
+
+ <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading" style="margin-bottom: 0px;">Simon Larsson</h2>
+
+                        <div class="content">
+                            <h6 class="desc">Game Programmer</h6>
+                            <center>
+                             <img class="profile-image img-fluid rounded" src="assets/images/profile.jpg" alt="Simon Larsson" style="margin-bottom:10px;">
+                         </center>
+
+                            <ul class="list-unstyled">
+                                <li><a title="Linkedin" href="https://www.linkedin.com/in/simon-larsson-389830182"><i class="fab fa-linkedin-in"></i>Linkdin</a></li>
+
+                                <li><a title="Github" href="https://github.com/LarssonSv"><i class="fab fa-github-alt"></i>Github</a></li>
+
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:simonlarsson1997@outlook.com">simonlarsson1997@outlook.com</a></li>
+
+                                <li><i class="fas fa-phone"></i><span class="sr-only">Website:</span><a href="tel:+46 73-663-1997">+46 73-663-1997</a></li>
+
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.simonlarsson.nu">https://www.simonlarsson.nu</a></li>
+
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span><a href="https://goo.gl/maps/B6JKyyXuWLoZEJFW9"> Stockholm, Sweden</a></li>
+                            </ul>
+
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
 
                 <aside class="skills aside section">
                     <div class="section-inner">
@@ -2009,30 +2026,47 @@ public class ProceduralAnimeController : MonoBehaviour
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 
-                <aside class="info aside section">
+                <aside class="education aside section">
                     <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
+                        <h2 class="heading">Work Experience</h2>
                         <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Stockholm, Sweden</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">simonlarsson1997@outlook.com</a></li>
-                                <li><i class="fas fa-phone"></i><span class="sr-only">Website:</span><a href="tel:+46 73-663-1997">+46 73-663-1997</a></li>
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.simonlarsson.nu</a></li>
-                            </ul>
+                             <div class="item">
+                                <h3 class="title">Stage/Sound Technician - <span class="place"><a href="#">Stockholm City</a></span> <span class="year">(2015 Q2 - Present)</span></h3>
+                                <p> Kungsträdgårdens stage</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Store Manager/Salesmen - <span class="place"><a href="#">Kjell & Company</a></span> <span class="year">(2017 Q1 - 2018 Q3)</span></h3>
+                                <p>Logistics, Salesmen and summer store manager handling inventory, market analysis and job schedules</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Logistics Worker - <span class="place"><a href="#">Lundagrossisten</a></span> <span class="year">(2014 Q3 - 2015 Q3)</span></h3>
+                                <p>Handling incoming/outgoing orders, cleaning and sorting/optimizing our storage facility, Selfgoing.</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Fast Food Worker - <span class="place"><a href="#">Max Burgers</a></span> <span class="year">(2017 Q2 - 2017 Q4)</span></h3>
+                                <p>Hamngatan</p>
+                            </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
-                </aside><!--//aside-->
+                </aside><!--//section-->
+
 
             </div><!--//secondary-->    
         </div><!--//row-->
     </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
+     
+    <footer>
+        <div class="fixed-bottom">
+            <div class="float-right" style="margin-bottom: 25px; margin-right: 25px;">
+             <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a> 
+         </div>
+        </div>
+        
+    </footer>
+
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
@@ -2043,6 +2077,24 @@ public class ProceduralAnimeController : MonoBehaviour
     <script src="assets/js/prism.js"></script>
     <!--FancyBox-->
     <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script>$(document).ready(function(){
+    $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+            return false;
+        });
+});</script>
+
+   
 </body>
 </html> 
 

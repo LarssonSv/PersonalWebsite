@@ -31,9 +31,9 @@
 <Header>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
   <!-- Brand -->
-  <a class="navbar-brand" href="index.html">Featured</a>
+  <a class="navbar-brand" href="index.html">Showcase</a>
 
-  <!-- Toggler/collapsibe Button -->
+        <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -68,8 +68,7 @@
                         <div class="content">
 
                                <div class="item featured text-center">
-                                <h3 class="title">Games</h3>
-                                <p class="summary">Completed games!</p>
+                                <h6 class="title">Games</h6>
                             </div>
 
                             <hr class="divider" />
@@ -406,8 +405,8 @@ public class RoundScriptableEdit : Editor
                                     <h3 class="title"><a href="" target="_blank">Ai Creation</a></h3>
                                     <p>With a short deadline, corners were cut and my implementation of our three enemies had to be fast. So a well structured StateMachine following my flowchart had to do.
                                         <br> Using generic behaviors/classes, I could reuse must of the scripts for all of our enemies. I only added specific attack behaviors and some pathing behavior to seal the deal.
-                                        <br> I needed to save on performance so instead of adding a flocking behavior, I added a node system for player-aggro and the main objective (The nexus).
-                                        So each Ai was handed a path to a point around the target to reduced clumping of the Ai.
+                                        <br> I added a node system for player-aggro and the main objective (The nexus).
+                                        So each Ai was handed a path to a point around the target to reduced clumping of the Ai. This combined with Obstacle avoidance made the Ai predictable and less "yanky".
                                         <br>
                                         <br>
                                         <br>
@@ -620,7 +619,7 @@ public class AiController : MonoBehaviour, IDamageable
                                 </div>
                             </div><!--//item-->
 
-                </section><!--//BeatPorn-->
+                </section><!--//Beatborn-->
 
                 <section class="latest section">
 
@@ -760,7 +759,7 @@ void UBSDeathTrapComponent::BeginOverlap(UPrimitiveComponent* OverlappedComponen
                                     <h3 class="title"><a href="" target="_blank">Catapult</a></h3>
                                     <p>
                                         Events are rigged up to give the designer the tools they need to send some orcs to heaven.
-                                        For example we have events for Catapult-Recharge, Catapult-Fire, Catapult Ready.
+                                        For example I have events for Catapult-Recharge, Catapult-Fire, Catapult Ready.
                                         <br>
                                         The destination target is set by an Unreal Target Actors.
                                         A curve is then calculated with a ProjectileComponent with a random offset.
@@ -1030,10 +1029,6 @@ void UBSCameraShaker::TickComponent(float DeltaTime, ELevelTick TickType, FActor
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="" target="_blank">The Orc Ai</a></h3>
                                     <p>
-                                        Events are rigged up to give the designer the tools they need to send some orcs to heaven.
-                                        For example we have events for Catapult-Recharge, Catapult-Fire, Catapult Ready.
-                                        The destination target is set by an Unreal Target Actor.
-                                        <br>
                                         I did not want to use boids as we wanted to keep the horde as predictable as possible.
                                         So I ended up giving the orcs target location by drawing up a circle around the mouse click position.
                                         With some added noise it turned out great and predictable.
@@ -1207,6 +1202,235 @@ void ABSAIAgent::PanicMode()
                             </div><!--//item-->
 
                         </div>
+                </section><!--//HordeHavoc-->
+
+
+                <section class="latest section">
+
+                    <div class="section-inner">
+                        <h2 class="heading"></h2>
+                        <a class="content">
+
+                            <div class="item featured text-center">
+                                <h3 class="title">Counter-Strike Mods</h3>
+                                <p class="summary">Zombie Mode & Surf</p>
+                                <div class="row">
+
+                                    <div class="featured-image col-sm">
+                                        <img class="rounded img-fluid project-image" style="background-color: black;" src="assets/projects/mods/icon.png" alt="project name" />
+                                        <div class="ribbon">
+                                            <div style="font-size: 0.5em !important; color:white;" class="text">DreamHack <br> Showcase</div>
+                                        </div>
+                                    </div>
+                                    <div class="desc text-left infoGrid col-sm">
+                                        <div class="row01">
+                                            <ul class="ulInfo">
+                                                <li>Platform</li>
+                                                <li>Language</li>
+                                                <li>Engine</li>
+                                                <li>Development Time</li>
+                                                <li>Team Size</li>
+                                                <li>Graphics API</li>
+                                            </ul>
+                                        </div>
+                                        <div class="dividerInfo"></div>
+                                        <div class="row02">
+                                            <ul class="ulInfo2">
+                                                <li>Windows</li>
+                                                <li>C#</li>
+                                                <li>Unity 2019.3</li>
+                                                <li>1 Month</li>
+                                                <li>Solo</li>
+                                                <li>DirectX11</li>
+                                            </ul>
+                                        </div>
+                                    </div><!--//desc-->
+                                </div>
+
+                            </div>
+
+                            <hr class="divider" />
+
+                            <div class="item row">
+
+
+                                <div class="col-md-4 col-12">
+                                    <a data-fancybox href="assets/projects/mods/bunny.mp4">
+                                        <video class="rounded project-image img-fluid" src="assets/projects/mods/bunny.mp4" muted loop autoplay></video>
+                                    </a>
+                                </div>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Quake Movement</a></h3>
+                                    <p>
+                                        A Velocity based movement controller with a delay on friction application, alowing the player to bunnyhop like in Counter-Strike.
+                                        <br>
+                                        The controller also allows me to set different MaxSpeed and Speed values dependent on the state of our Player, for example Sprint and Crouch -states.
+                                    </p>
+                                </div><!--//desc-->
+
+                            </div>
+
+
+                            <hr class="divider" />
+
+                            <div class="item row">
+
+
+                                <div class="col-md-4 col-12">
+                                    <a data-fancybox href="assets/projects/mods/AiAttack.mp4">
+                                        <video class="rounded project-image img-fluid" src="assets/projects/mods/AiAttack.mp4" muted loop autoplay></video>
+                                    </a>
+                                </div>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Friendly Bots</a></h3>
+                                    <p>
+                                        The bots are using a <b>Float based Utility Function system</b> combined with a <b>StateMachine</b> to decide and take action.
+                                        <br> Each Ai State has an Array of premade decisions that it loop over in that state, each decision returns a float priority value. At the end of the loop the system evaluates the best state to be in and switches to it.
+                                        <br> This gives me a functionality close to a <b>Behavior Tree</b> without the fancy Editor UI. Which is something that could be added in the future maybe.
+                                        <br> Behaviors:
+                                    <ul>
+                                        <li>Follows the closet "Real" player</li>
+                                        <li>Runs to Heal when low</li>
+                                        <li>Attacks Zombie</li>
+                                        <li>Idle search</li>
+                                    </ul>
+                                    </p>
+                                </div><!--//desc-->
+
+                            </div>
+
+                            <hr class="divider" />
+
+                            <div class="item row">
+
+
+                                <div class="col-md-4 col-12">
+                                    <a data-fancybox href="assets/projects/mods/sad.png">
+                                        <img class="img-fluid" src="assets/projects/mods/sad.png">
+                                    </a>
+                                </div>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Network (WIP)</a></h3>
+                                    <p>
+                                        Two close friends <a href="https://www.linkedin.com/in/johan-andersson-6b3424157/">Johan Andersson</a> & <a href="https://www.linkedin.com/in/per-%C3%A5kerstr%C3%B6m-767bb1150/">Per Åkerström</a> (i have some friends) have been developing a network protocol for awhile now.  And this project became the first one to use it.
+                                        <br>The project started of as local project with network implantation being added when it is ready.
+                                        To some success I've written most off the codebase with this in mind. In a couple of days after the protocol being ready we had:
+                                        <ul>
+                                            <li>Replication of all Player inputs</li>
+                                            <li>Reliable Shooting messages</li>
+                                            <li>Zombies Transform Replication</li>
+                                            <li>Zombies Animation State Replication</li>
+                                        </ul>
+                                        And the work is pushing on!
+                                    </p>
+                                </div><!--//desc-->
+
+                            </div>
+
+                            <hr class="divider" />
+
+                            <div class="item row">
+
+                                <div class="col-md-4 col-12">
+                                    <a data-fancybox href="assets/projects/mods/zombies.mp4">
+                                        <video class="rounded project-image img-fluid" src="assets/projects/mods/zombies.mp4" muted loop autoplay></video>
+                                    </a>
+                                </div>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Zombies</a></h3>
+                                    <p>
+                                        The Zombies are using a simple <b>Finite StateMachine</b>, old basic tech. But for zombies it works great as they are kinda of dumb in nature.
+                                        <br>
+                                        Behaviors:
+                                    <ul>
+                                        <li>Attacks barricades</li>
+                                        <li>Attacks Bots & Players</li>
+                                    </ul>
+
+                                    </p>
+                                </div><!--//desc-->
+
+                            </div>
+
+                            <hr class="divider" />
+
+                                <div class="item row">
+
+                                    <div class="col-md-4 col-12">
+                                        <a data-fancybox href="assets/projects/mods/inpect.mp4">
+                                            <video class="rounded project-image img-fluid" src="assets/projects/mods/inpect.mp4" muted loop autoplay></video>
+                                        </a>
+                                    </div>
+                                    <div class="desc col-md-8 col-12">
+                                        <h3 class="title"><a href="" target="_blank">Weapon System</a></h3>
+                                        <p>
+                                            A child <b>StateMachine</b> to the PlayerControllers machine drives all of the weapon functionality.
+                                            <br>
+                                            The Weapon System holds an Array of custom <b>WeaponData</b> assets. In <b>WeaponData</b> we find all parameters for our weapons including GameObject.
+                                            <br>
+                                            Features:
+                                        <ul>
+                                            <li>Procedural Weapon bobbing Animation</li>
+                                            <li>Inspect Weapon</li>
+                                            <li>Switch Weapons</li>
+                                            <li>Reload</li>
+                                            <li>Shoot</li>
+                                            <li>Sprint</li>
+                                        </ul>
+
+                                            A lot of inspiration has been taken from Counter-Strike, so inspect animations and reload -animations can be canceled and so on.
+                                        </p>
+
+                                    </div><!--//desc-->
+                                </div>
+
+
+                            <hr class="divider"/>
+
+                            <div class="item row">
+
+                                <div class="col-md-4 col-12">
+                                    <a data-fancybox href="assets/projects/mods/spray.mp4">
+                                        <video class="rounded project-image img-fluid" src="assets/projects/mods/spray.mp4" muted loop autoplay></video>
+                                    </a>
+                                </div>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="" target="_blank">Weapon Recoil</a></h3>
+                                    <p>
+                                         Each <b>Weapon Data</b> asset contains:
+                                        <ul>
+                                    <li>Float: RecoilPerBullet</li>
+                                    <li>Float: Recoil Fall Of</li>
+                                    <li>Float: Random Deviation</li
+                                    <li>Vector 3: Recoil Direction Pull</li>
+                                    <li>Curve: Recoil Curve</li>
+                                        </ul>
+                                    Among much more...
+                                    <br>With this data I was able to create a really quick and well working Recoil system.
+                                    By an increasing recoil float value stored in the Weapon System, I can multiple the <b>Recoil Direction Pull</b> and at it to the shoot direction which is also a Vector3. <br>
+                                    Add some curves and recoil fall off and I got what I have to the left.
+
+                                    </p>
+                                </div><!--//desc-->
+                            </div>
+
+
+
+
+                            <div class="item featured text-center">
+                                <h3 class="title"> </h3>
+                                <ul class="social list-inline">
+                                </ul>
+
+                                <div class="text-center">
+                                    <p class="summary" style="margin-bottom: 5px !important;">Big thanks for rubber ducking, help and Network backbone <br><a href="https://www.linkedin.com/in/johan-andersson-6b3424157/">Johan Andersson</a> & <a href="https://www.linkedin.com/in/per-%C3%A5kerstr%C3%B6m-767bb1150/">Per Åkerström</a></p>
+                                    <ul class="contribution">
+
+                                    </ul>
+                                </div>
+                            </div><!--//item-->
+
+                    </div>
                 </section><!--//HordeHavoc-->
               
             </div><!--//primary-->

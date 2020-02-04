@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="ae3451c2-dcf3-46f8-b388-2d2817366a5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/2.data.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/2.wasm.code.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/2.wasm.framework.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/Unity.data.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/Unity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/Unity.wasm.code.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/Unity.wasm.framework.unityweb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/Build/UnityLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Unity/logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +69,7 @@
       <workItem from="1580384004777" duration="1726000" />
       <workItem from="1580389020800" duration="593000" />
       <workItem from="1580489813584" duration="550000" />
-      <workItem from="1580818686716" duration="490000" />
+      <workItem from="1580818686716" duration="1565000" />
     </task>
     <servers />
   </component>

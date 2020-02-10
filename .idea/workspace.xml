@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae3451c2-dcf3-46f8-b388-2d2817366a5c" name="Default Changelist" comment="" />
+    <list default="true" id="ae3451c2-dcf3-46f8-b388-2d2817366a5c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/shaders.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shaders.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +63,7 @@
       <workItem from="1580821009756" duration="1298000" />
       <workItem from="1580998562264" duration="1629000" />
       <workItem from="1581331597012" duration="178000" />
+      <workItem from="1581335706244" duration="43000" />
     </task>
     <servers />
   </component>

@@ -241,10 +241,6 @@ public class ProceduralAnimeController : MonoBehaviour
                                     <video class="rounded project-image img-fluid" src="assets/projects/Maps/main.mp4" muted loop autoplay></video>
                                 </a>
 
-                                <a data-fancybox="" href="assets/projects/Maps/smooth.mp4">
-                                    <video class="rounded project-image img-fluid" src="assets/projects/Maps/smooth.mp4" muted loop autoplay></video>
-                                </a>
-
                                 <ul class="social list-inline">
                                     <li class="list-inline-item"><a title="Github" href="https://github.com/LarssonSv/InfluenceMaps"><i class="fab fa-github-alt"></i></a></li>
                                 </ul>
@@ -260,7 +256,6 @@ public class ProceduralAnimeController : MonoBehaviour
                                         <li>BoundingBox(AABB) to create NavData</li>
                                         <li>Basic NavMesh system</li>
                                         <li>Path slicing to optimize path evaluation</li>
-                                        <li>Path Smoothing with turn speed</li>
                                     </ul>
                                 </div>
                             </div>
@@ -313,126 +308,7 @@ public class ProceduralAnimeController : MonoBehaviour
 
                             <div class="item row">
 
-                                <div class="col-md-4 col-12">
-                                    <a data-fancybox="" href="assets/projects/Ether/main.mp4">
-                                        <video class="rounded project-image img-fluid" src="assets/projects/Ether/main.mp4" muted loop autoplay></video>
-                                    </a>
-                                </div>
-
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="" target="_blank">Npc ID System</a></h3>
-                                    <p>
-                                        To keep Client and Server communication clean.
-                                        I made the Npc system and most of the other systems ID based.
-                                        An ID is created by both the client/server when a new npc is spawned into the world.
-                                        I then loop through all the npc on the server to update their position.
-                                        If a position is changed... the ID and the new position is sent to the client.
-                                        <br>
-                                        Same thing is going on Client side more or less.
-                                        The Client loops through a list of the IDs checking for changes and updates their visualisation.
-
-                                    </p>
-                                    <p class="float-right"><a class="more-link" data-toggle="collapse" href="#code10" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-external-link-alt"></i>Show C#</a></p>
-                                </div><!--//desc-->
-
-
-                            </div><!--//ID Based System-->
-
-                            <div class="desc col-12 collapse codeContainer" id="code10">
-                                    <pre>
-                                        <code class="language-csharp">
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using Netkraft;
-using Netkraft.Messaging;
-using UnityEngine;
-
-[System.Serializable]
-public class ServerNpcManager
-{
-    [SerializeField] private Server _server;
-    [SerializeField] private Grid _grid;
-    [SerializeField] private Ship _ship;
-
-    private readonly List<ServerNpc> _npcs = new List<ServerNpc>();
-    private int _idCounter = 0;
-
-
-
-    public void Update()
-    {
-        float dt = Time.deltaTime;
-        foreach (ServerNpc npc in _npcs)
-        {
-            if (npc.Path.Count > 1)
-            {
-                npc.timer += dt;
-
-                if (npc.timer < 1f)
-                    continue;
-
-                //Remove completed Targetcell
-                _grid.OccupyCell(npc.TargetCell, false);
-                npc.Path.RemoveAt(npc.Path.Count-1);
-                npc.timer = 0;
-
-                //If we have more Targetcells dont skip
-                if (npc.Path.Count < 1)
-                    continue;
-
-                //Set new TargetCell
-                npc.TargetCell = npc.Path[npc.Path.Count-1];
-                _grid.OccupyCell(npc.TargetCell, true);
-            }
-        }
-
-        Server.Send(new NpcUpdateMessage {ServerNpcs = _npcs.ToArray()});
-    }
-
-    public void AddNpc(Vector2Int gridPosition)
-    {
-        _idCounter++;
-        _npcs.Add(new ServerNpc {Id = _idCounter, TargetCell = gridPosition});
-        Debug.Log("Added Npc with ID: " + _idCounter);
-    }
-
-    public bool AddPathToNpc(int npcId, Vector2Int goal)
-    {
-        foreach (ServerNpc npc in _npcs)
-        {
-            if (npc.Id != npcId)
-                continue;
-
-            npc.Path = ServerAstar.GetPath(npc.TargetCell, goal).ToList();
-            if (npc.Path.Count != 0)
-            {
-                npc.TargetCell = npc.Path[npc.Path.Count - 1];
-                Debug.Log("Server added path!");
-                return true;
-            }
-        }
-
-        Debug.Log("Server could not find Npc ID! Or Path was not reachable!");
-        return false;
-    }
-
-    [Writable]
-    public class ServerNpc
-    {
-        public int Id;
-        public Vector2Int TargetCell;
-        [SkipIndex] public float timer;
-        [SkipIndex] public List<Vector2Int> Path = new List<Vector2Int>();
-    }
-}
-                                        </code>
-                                    </pre>
-
-
-                            </div><!--//content-->
-
-                            <hr class="divider"/>
+                              
 
                             <div class="item row">
 
@@ -698,15 +574,15 @@ public class ServerInteractorManager
             </div><!--//primary-->
             <div class="secondary col-lg-4 col-12">
 
- <aside class="info aside section">
+                <aside class="info aside section">
                     <div class="section-inner">
                         <h2 class="heading" style="margin-bottom: 0px;">Simon Larsson</h2>
 
                         <div class="content">
                             <h6 class="desc">Game Programmer</h6>
                             <center>
-                             <img class="profile-image img-fluid rounded" src="assets/image.png" alt="Simon Larsson" style="margin-bottom:10px;">
-                         </center>
+                                <img class="profile-image img-fluid rounded" src="assets/image.png" alt="Simon Larsson" style="margin-bottom:10px;">
+                            </center>
 
                             <ul class="list-unstyled">
                                 <li><i class="fas fa-download"></i><span class="sr-only">CV:</span><a href="assets/CV_Programmer,%20Simon,Larsson.pdf">Resume (CV)</a></li>
@@ -720,7 +596,7 @@ public class ServerInteractorManager
 
                                 <li><i class="fas fa-phone"></i><span class="sr-only">Website:</span><a href="tel:+46 73-663-1997">+46 73-663-1997</a></li>
 
-                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.simonlarsson.nu">https://www.simonlarsson.nu</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://larssonsv.github.io/PersonalWebsite/">https://larssonsv.github.io/PersonalWebsite/</a></li>
 
                                 <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span><a href="https://goo.gl/maps/B6JKyyXuWLoZEJFW9"> Stockholm, Sweden</a></li>
                             </ul>
@@ -732,95 +608,93 @@ public class ServerInteractorManager
 
                 <aside class="skills aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
+                        <h2 class="heading">Experience</h2>
                         <div class="content">
                             <p class="intro">
-                            <div class="skillset">
+                                <div class="skillset">
 
-                            <div class="item">
-                                <h3 class="level-title">Unity<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Tools/Multi-threading/Larger-Systems"><i class="fas fa-info-circle"></i>Very Good</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="85%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="80%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="75%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="level-title">C#<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="60%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="65%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Good</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="60%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
+                                    <div class="item">
+                                        <h3 class="level-title">Unity<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Tools/Multi-threading/Larger-Systems"><i class="fas fa-info-circle"></i>Very Good</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="40%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
+                                    <div class="item">
+                                        <h3 class="level-title">Unreal<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="C++/Blueprint/Lua"><i class="fas fa-info-circle"></i>Fair</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="40%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">Unreal<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="C++/Blueprint/Lua"><i class="fas fa-info-circle"></i>Fair</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="50%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="level-title">HTML5, CSS3<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Hobby developer, small business websites"><i class="fas fa-info-circle"></i>Fair</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="40%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">HTML5, CSS3<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Hobby developer, small business websites"><i class="fas fa-info-circle"></i>Fair</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="50%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="level-title">Adobe Package<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Good knowledge in After Effects, Photoshop, Illustrator"><i class="fas fa-info-circle"></i>Fair</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="40%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">Adobe Package<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Good knowledge in After Effects, Photoshop, Illustrator"><i class="fas fa-info-circle"></i>Fair</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="50%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="level-title">GLSL/HLSL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Basic</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="30%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">GLSL/HLSL<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Basic</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="30%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
+                                    <div class="item">
+                                        <h3 class="level-title">Rust<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Basic</span></h3>
+                                        <div class="level-bar">
+                                            <div class="level-bar-inner" data-level="30%">
+                                            </div>
+                                        </div><!--//level-bar-->
+                                    </div><!--//item-->
 
-                            <div class="item">
-                                <h3 class="level-title">Rust<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Basic</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="30%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
-
-                                 <div class="item">
-                                <h3 class="level-title">Rust<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class="fas fa-info-circle"></i>Basic</span></h3>
-                                <div class="level-bar">
-                                    <div class="level-bar-inner" data-level="30%">
-                                    </div>
-                                </div><!--//level-bar-->
-                            </div><!--//item-->
-
-                            </div>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
+                                </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
                 </aside><!--//section-->
-                
+
                 <aside class="education aside section">
                     <div class="section-inner">
                         <h2 class="heading">Education</h2>
                         <div class="content">
-                            <div class="item">                      
+                            <div class="item">
                                 <h3 class="title"><i class="fas fa-graduation-cap"></i> Game Programming</h3>
                                 <h4 class="university">Future Games <span class="year">(2018-Present)</span></h4>
                             </div><!--//item-->
@@ -840,8 +714,13 @@ public class ServerInteractorManager
                     <div class="section-inner">
                         <h2 class="heading">Work Experience</h2>
                         <div class="content">
-                             <div class="item">
-                                <h3 class="title">Stage/Sound Technician - <span class="place"><a href="#">Stockholm City</a></span> <span class="year">(2015 Q2 - Present)</span></h3>
+                            <div class="item">
+                                <h3 class="title">Game Programmer - <span class="place"><a href="#">Stockholm City</a></span> <span class="year">(2020 Q1 - Present)</span></h3>
+                                <p> Avalanche Studios Groups</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Stage/Sound Technician - <span class="place"><a href="#">Stockholm City</a></span> <span class="year">(2015 Q2 - 2020 Q1)</span></h3>
                                 <p> Kungsträdgårdens stage</p>
                             </div><!--//item-->
 
